@@ -23,8 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Collect static files
+        run: |
+          mkdir _site
+          cp index.html o-mne.html reference.html kontakt.html .nojekyll _site/
+          cp -r css _site/css
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
