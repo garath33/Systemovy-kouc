@@ -143,17 +143,21 @@ a {
 }
 
 .hero h1 {
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    line-height: 1.08;
-    letter-spacing: -0.045em;
-    max-width: 14ch;
-    margin-bottom: 1.1rem;
+    font-size: clamp(2rem, 4.6vw, 3.4rem);
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    max-width: 16ch;
+    margin-bottom: 1.2rem;
 }
 
 .hero .lead {
-    font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.82);
-    max-width: 38rem;
+    font-size: 1.12rem;
+    color: rgba(255, 255, 255, 0.86);
+    max-width: 40rem;
+    margin-bottom: 0.9rem;
+}
+
+.hero .lead + .lead {
     margin-bottom: 2rem;
 }
 

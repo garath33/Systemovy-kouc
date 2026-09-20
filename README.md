@@ -1,6 +1,6 @@
-# Systémový kouč
+# Martin Šimůnek
 
-Samostatný web **Business & Operations Coach** – Martin Šimůnek.
+Web **podpory a kouče pro klidné podnikání**.
 
 ## Adresy
 
@@ -9,8 +9,8 @@ Samostatný web **Business & Operations Coach** – Martin Šimůnek.
 
 ## Stránky
 
-- `index.html` — služba, pilíře, ceník 900/600 Kč, balíčky
+- `index.html` — představení vlastními slovy, pilíře, ceník
 - `o-mne.html` — medailonek
-- `reference.html` — ohlasy ke koučinku
-- `kontakt.html` — Reservio a formulář
+- `reference.html` — ohlasy
+- `kontakt.html` — rezervace a formulář
 - `ochrana-udaju.html`, `storno.html` — právní texty
