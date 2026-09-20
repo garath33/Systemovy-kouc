@@ -26,8 +26,8 @@ jobs:
       - name: Collect static files
         run: |
           mkdir _site
-          cp index.html o-mne.html reference.html kontakt.html .nojekyll _site/
-          cp -r css _site/css
+          cp index.html o-mne.html reference.html kontakt.html ochrana-udaju.html storno.html .nojekyll _site/
+          cp -r css js _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

@@ -4,49 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt | Systémový kouč</title>
+    <meta name="description" content="Domluvte si úvodní 30min konzultaci zdarma s Martinem Šimůnkem.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">SYSTÉMOVÝ KOUČ</a>
-        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
-        <label for="menu-checkbox" class="menu-icon">☰</label>
-        <ul>
-            <li><a href="index.html">DOMŮ</a></li>
-            <li><a href="index.html#cenik">CENÍK</a></li>
-            <li><a href="reference.html">REFERENCE</a></li>
-            <li><a href="o-mne.html">O MARTINOVI</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
-        </ul>
-    </nav>
-    <header class="page-hero" style="background-color: #1a3c40;">
-        <h1>Kontakt</h1>
+    <header class="site-header">
+        <nav class="nav wrap">
+            <a href="index.html" class="logo">Systémový kouč</a>
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+            <label for="menu-checkbox" class="menu-icon" aria-label="Menu">☰</label>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="index.html#cenik">Ceník</a></li>
+                <li><a href="reference.html">Reference</a></li>
+                <li><a href="o-mne.html">O Martinovi</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="container">
-        <div class="card" style="text-align: center; background: #E0F2F1; padding: 2rem;">
-            <h3>Úvodní 30min konzultace zdarma</h3>
-            <p style="margin: 1rem auto 1.5rem; max-width: 640px;">Společně se podíváme, jestli dává smysl spolupráce na struktuře, Google Workspace a operativě.</p>
-            <a href="https://martin-simunek.reservio.com" target="_blank" rel="noopener" class="btn" style="background: #1e5f8a;">Rezervovat termín na Reservio</a>
+    <section class="page-hero">
+        <div class="wrap">
+            <p class="eyebrow">Kontakt</p>
+            <h1>Domluvme první krok</h1>
         </div>
-        <div class="card" style="text-align: center; margin-top: 1.5rem; padding: 2rem;">
-            <h4>Martin Šimůnek</h4>
-            <p>Email: <a href="mailto:cesta-zmeny@email.cz">cesta-zmeny@email.cz</a></p>
-            <p>Telefon: <a href="tel:+420604430087">+420 604 430 087</a></p>
-            <p>IČO: 08162867</p>
-            <p>Online nebo dle dohody</p>
-        </div>
-        <div class="card" style="margin-top: 1.5rem; padding: 2rem;">
-            <h3>Napsat zprávu</h3>
-            <form action="https://formspree.io/f/mwvvkrgd" method="POST" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem;">
-                <input type="text" name="name" placeholder="Vaše jméno" required style="padding: 1rem; border-radius: 8px; border: 1px solid #ddd;">
-                <input type="email" name="email" placeholder="Váš email" required style="padding: 1rem; border-radius: 8px; border: 1px solid #ddd;">
-                <textarea name="message" placeholder="S čím potřebujete pomoct v podnikání?" rows="5" required style="padding: 1rem; border-radius: 8px; border: 1px solid #ddd;"></textarea>
-                <button type="submit" class="btn" style="border: none; cursor: pointer; background: #1e5f8a;">Odeslat zprávu</button>
-            </form>
+    </section>
+    <main class="section">
+        <div class="wrap contact-grid">
+            <div class="card">
+                <h2>Úvodní konzultace zdarma</h2>
+                <p class="muted">30 minut. Společně se podíváme, jestli dává smysl spolupráce na struktuře, Google Workspace a operativě.</p>
+                <p style="margin: 1.4rem 0;"><a class="btn btn-solid" href="https://martin-simunek.reservio.com" target="_blank" rel="noopener">Rezervovat termín</a></p>
+                <p><strong>Martin Šimůnek</strong></p>
+                <p>E-mail: <a href="mailto:cesta-zmeny@email.cz">cesta-zmeny@email.cz</a></p>
+                <p>Telefon: <a href="tel:+420604430087">+420 604 430 087</a></p>
+                <p class="muted">IČO 08162867 · Online nebo dle dohody</p>
+            </div>
+            <div class="card">
+                <h2>Napsat zprávu</h2>
+                <form class="form" action="https://formspree.io/f/mwvvkrgd" method="POST">
+                    <input type="text" name="name" placeholder="Vaše jméno" required>
+                    <input type="email" name="email" placeholder="Váš e-mail" required>
+                    <textarea name="message" placeholder="S čím potřebujete pomoct v podnikání?" rows="6" required></textarea>
+                    <button type="submit" class="btn btn-solid">Odeslat zprávu</button>
+                </form>
+            </div>
         </div>
     </main>
-    <footer id="footer" style="margin-top: 4rem; padding: 3rem 5%; background: #2c3e50; color: #fff; text-align: center;">
-        <p>Systémový kouč – Martin Šimůnek</p>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div>
+                <a class="footer-brand" href="index.html">Systémový kouč</a>
+                <p>Martin Šimůnek · řád v podnikání, Google Workspace a operativní partnerství</p>
+            </div>
+            <p>© 2026 Martin Šimůnek · <a href="ochrana-udaju.html">Ochrana údajů</a> · <a href="storno.html">Storno podmínky</a></p>
+        </div>
     </footer>
+    <script src="js/site.js"></script>
 </body>
 </html>

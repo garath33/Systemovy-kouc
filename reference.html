@@ -4,54 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reference | Systémový kouč</title>
+    <meta name="description" content="Ohlasy klientů na koučink a spolupráci s Martinem Šimůnkem.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">SYSTÉMOVÝ KOUČ</a>
-        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
-        <label for="menu-checkbox" class="menu-icon">☰</label>
-        <ul>
-            <li><a href="index.html">DOMŮ</a></li>
-            <li><a href="index.html#cenik">CENÍK</a></li>
-            <li><a href="reference.html">REFERENCE</a></li>
-            <li><a href="o-mne.html">O MARTINOVI</a></li>
-            <li><a href="kontakt.html">KONTAKT</a></li>
-        </ul>
-    </nav>
-    <header class="page-hero" style="background-color: #1a3c40;">
-        <h1>Ohlasy na spolupráci</h1>
+    <header class="site-header">
+        <nav class="nav wrap">
+            <a href="index.html" class="logo">Systémový kouč</a>
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+            <label for="menu-checkbox" class="menu-icon" aria-label="Menu">☰</label>
+            <ul>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="index.html#cenik">Ceník</a></li>
+                <li><a href="reference.html">Reference</a></li>
+                <li><a href="o-mne.html">O Martinovi</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="container">
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-            <div class="testimonial-card">
-                <span class="testimonial-tag tag-koucink">Koučink</span>
-                <p class="testimonial-text">"Martin je skvelý nielen ako kouč, ale aj ako človek. Nasmeruje Vás na správnu cestu, pomôže Vám ujasniť a zmapovať si priority vo svojom živote a je to človek, na ktorého sa môžete kedykoľvek obrátiť a stále nájde si na Vás čas a bude tu pre Vás."</p>
-                <p class="testimonial-author">Milena</p>
-                <p style="font-size: 0.8rem; color: #888;">mentor, kouč</p>
-            </div>
-            <div class="testimonial-card">
-                <span class="testimonial-tag tag-koucink">Koučink</span>
-                <p class="testimonial-text">"Od počátku spolupráce s Martinem jsem dosáhl významné výsledky v oblastech, které potřebuji ve svém životě vyřešit. Na koučování s Martinem oceňuji upřímný zájem o můj život a cítím se povzbuzen jít za svými cíli. Těším se na pokračování našeho vztahu."</p>
-                <p class="testimonial-author">Martin</p>
-                <p style="font-size: 0.8rem; color: #888;">softwarový inženýr</p>
-            </div>
-            <div class="testimonial-card">
-                <span class="testimonial-tag tag-koucink">Koučink</span>
-                <p class="testimonial-text">"Do koučinku s Martinem jsem ze začátku šla jako do experimentu s tím, že jsem byla ochotná vyzkoušet něco nového, neinvazivního. Byly tam momenty, kdy jsem v sobě nechtěla šťourat ve věcech, které mi jsou nepříjemné, ale je to potřeba pro posunutí se dál."</p>
-                <p class="testimonial-author">Tereza</p>
-                <p style="font-size: 0.8rem; color: #888;">grafička</p>
-            </div>
-            <div class="testimonial-card">
-                <span class="testimonial-tag tag-koucink">Koučink</span>
-                <p class="testimonial-text">"Jsem sebevědomější, drzejší. Vřele doporučuji. Kamarádi vás dál neposunou, ale Martin ano."</p>
-                <p class="testimonial-author">Kristýna</p>
-                <p style="font-size: 0.8rem; color: #888;">studentka, lektor 1. pomoci</p>
-            </div>
+    <section class="page-hero">
+        <div class="wrap">
+            <p class="eyebrow">Reference</p>
+            <h1>Ohlasy na spolupráci</h1>
+        </div>
+    </section>
+    <main class="section">
+        <div class="wrap grid-2">
+            <article class="card quote-card">
+                <blockquote>„Martin je skvelý nielen ako kouč, ale aj ako človek. Nasmeruje Vás na správnu cestu, pomôže Vám ujasniť a zmapovať si priority vo svojom živote a je to človek, na ktorého sa môžete kedykoľvek obrátiť.“</blockquote>
+                <cite>Milena</cite>
+                <p class="role">mentor, kouč</p>
+            </article>
+            <article class="card quote-card">
+                <blockquote>„Od počátku spolupráce s Martinem jsem dosáhl významné výsledky v oblastech, které potřebuji ve svém životě vyřešit. Oceňuji upřímný zájem a cítím se povzbuzen jít za svými cíli.“</blockquote>
+                <cite>Martin</cite>
+                <p class="role">softwarový inženýr</p>
+            </article>
+            <article class="card quote-card">
+                <blockquote>„Do koučinku s Martinem jsem ze začátku šla jako do experimentu. Byly tam momenty, kdy jsem v sobě nechtěla šťourat, ale je to potřeba pro posunutí se dál.“</blockquote>
+                <cite>Tereza</cite>
+                <p class="role">grafička</p>
+            </article>
+            <article class="card quote-card">
+                <blockquote>„Jsem sebevědomější, drzejší. Vřele doporučuji. Kamarádi vás dál neposunou, ale Martin ano.“</blockquote>
+                <cite>Kristýna</cite>
+                <p class="role">studentka, lektorka 1. pomoci</p>
+            </article>
         </div>
     </main>
-    <footer id="footer" style="margin-top: 4rem; padding: 3rem 5%; background: #2c3e50; color: #fff; text-align: center;">
-        <p>Systémový kouč – Martin Šimůnek</p>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div>
+                <a class="footer-brand" href="index.html">Systémový kouč</a>
+                <p>Martin Šimůnek · řád v podnikání, Google Workspace a operativní partnerství</p>
+            </div>
+            <p>© 2026 Martin Šimůnek · <a href="ochrana-udaju.html">Ochrana údajů</a> · <a href="storno.html">Storno podmínky</a></p>
+        </div>
     </footer>
+    <script src="js/site.js"></script>
 </body>
 </html>
