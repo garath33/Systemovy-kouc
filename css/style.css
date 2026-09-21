@@ -372,16 +372,29 @@ a {
     margin-bottom: 0.7rem;
 }
 
-.pillar ul,
-.price-card ul,
 .bio-list {
     margin: 0.9rem 0 0 1.05rem;
     color: var(--muted);
 }
 
-.pillar li,
-.price-card li,
 .bio-list li {
+    margin-bottom: 1.05rem;
+}
+
+.bio-list strong {
+    display: block;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+}
+
+.pillar ul,
+.price-card ul {
+    margin: 0.9rem 0 0 1.05rem;
+    color: var(--muted);
+}
+
+.pillar li,
+.price-card li {
     margin-bottom: 0.35rem;
 }
 
