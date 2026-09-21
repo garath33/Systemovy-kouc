@@ -144,8 +144,8 @@ a {
 }
 
 .hero-portrait-crop {
-    width: 240px;
-    height: 300px;
+    width: 312px;
+    height: 390px;
     margin: 0 auto;
     border-radius: 22px;
     overflow: hidden;
@@ -652,7 +652,8 @@ a {
 }
 
 .about-photos img {
-    width: 100%;
+    width: 70%;
+    margin-left: auto;
     aspect-ratio: 3 / 4;
     object-fit: cover;
     object-position: 72% 18%;
@@ -682,8 +683,8 @@ a {
     }
 
     .hero-portrait-crop {
-        width: 168px;
-        height: 210px;
+        width: 218px;
+        height: 273px;
     }
 
     .hero h1,
@@ -699,8 +700,14 @@ a {
 
     .about-photos {
         position: static;
-        max-width: 22rem;
+        max-width: 15.4rem;
         margin: 0 auto;
+    }
+
+    .about-photos img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .cta-band {
