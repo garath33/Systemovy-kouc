@@ -195,7 +195,7 @@ a {
 }
 
 .hero .lead + .lead {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 .actions {
@@ -517,6 +517,29 @@ a {
 .slide-dot.active {
     background: var(--blue);
     transform: scale(1.2);
+}
+
+.mid-cta {
+    margin: 2.6rem auto 0;
+    max-width: 36rem;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    padding: 2.2rem 1.8rem;
+    box-shadow: var(--shadow);
+}
+
+.mid-cta h2 {
+    letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
+    font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+}
+
+.mid-cta p {
+    color: var(--muted);
+    margin: 0 auto 1.3rem;
+    max-width: 28rem;
 }
 
 .cta-band {
