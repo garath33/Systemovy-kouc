@@ -520,14 +520,10 @@ a {
 }
 
 .mid-cta {
-    margin: 2.6rem auto 0;
-    max-width: 36rem;
+    margin: 2.8rem auto 0;
+    max-width: 34rem;
     text-align: center;
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 28px;
-    padding: 2.2rem 1.8rem;
-    box-shadow: var(--shadow);
+    padding: 0.4rem 0.5rem 0;
 }
 
 .mid-cta h2 {
@@ -538,8 +534,12 @@ a {
 
 .mid-cta p {
     color: var(--muted);
-    margin: 0 auto 1.3rem;
+    margin: 0 auto 1.35rem;
     max-width: 28rem;
+}
+
+.mid-cta .btn {
+    white-space: nowrap;
 }
 
 .cta-band {
