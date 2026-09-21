@@ -653,6 +653,7 @@ a {
 
 .about-photos img {
     width: 70%;
+    height: auto;
     margin-left: auto;
     aspect-ratio: 3 / 4;
     object-fit: cover;
