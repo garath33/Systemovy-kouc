@@ -1,7 +1,7 @@
 # Roadmap optimalizací
 
 Web: statický HTML na GitHub Pages, kanonická adresa `https://klidne-podnikani.cz/`.
-Práce: schválená fáze → feature větev → PR → CI → tvoje schválení → merge do `main`.
+Práce: feature větev → PR (Ready for review, ne draft) → zelené CI → ty dáš Squash and merge do `main`.
 
 Rozhodnutí z otázek 4–6 jsou v [`docs/ARCHITEKTURA.md`](ARCHITEKTURA.md).
 

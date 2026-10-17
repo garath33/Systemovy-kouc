@@ -65,6 +65,14 @@ Držíme poslední dvě velké verze **Chrome, Firefox, Safari** a **iPhone Safa
 
 Živé GitHub Pages je **jen z `main`**. Feature větev samu o sobě náhledovou URL nedostane (jeden web, jedna vlastní doména). To stačí: PR uvidíš v gitu, CI zkontroluje odkazy, po merge jde změna na `klidne-podnikani.cz`. Cloudflare ani Netlify nezavádíme.
 
+## Co dělat s pull requestem
+
+Agent práci dokončí a otevře PR. Draft je jen když je práce rozbitá nebo čeká na tebe uprostřed. Hotová vlna = **Ready for review** (už ne šedý draft).
+
+Tvoje jediné tlačítko, až jsou fajfky zelené: **Squash and merge**. Tím to jde na živý web. **Ready for review** už mačkat nemusíš, pokud PR není draft. **Close pull request** jen když změnu nechceš.
+
+Automatický merge na GitHubu nezapínáme — na `main` se rovnou nasazuje Pages.
+
 ## CI (stav znovu ověřený 2026-10-17)
 
 Dřív workflow vypadalo jen na deploy. **Už to neplatí.** Po PR #4 je:

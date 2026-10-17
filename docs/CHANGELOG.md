@@ -2,6 +2,11 @@
 
 Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
+## 2026-10-17 — Jak mergovat PR
+
+- Hotová práce se otevírá jako Ready for review, ne jako draft.
+- Merge do `main` zůstává na tobě (Squash and merge). Automatický merge ne.
+
 ## 2026-10-17 — Dočištění výkonu a formuláře
 
 - Z ochrany údajů pryč Reservio; zůstává jen Formspree.
