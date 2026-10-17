@@ -11,6 +11,7 @@ Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 - Kontakt beze změny: telefon a formulář, bez Calendly.
 - Poznámky: `docs/seo.md`.
 - Lychee (externí) nekontroluje kanonické URL na živém `klidne-podnikani.cz` — nová stránka tam před mergem dává 404.
+- DNS zóna: TXT pro Google Search Console (`google-site-verification=…`).
 
 ## 2026-10-17 — Přesměrování .online
 
