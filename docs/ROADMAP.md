@@ -13,7 +13,7 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 ## Fáze 0 — Proces
 
 - [x] `.cursorignore`, `.cursorrules`, `docs/`
-- [ ] CI (Lychee + sestavení `_site`) v PR #4
+- [x] CI (Lychee + sestavení `_site`) v PR #4
 
 ## Fáze 1 — SEO základy (v tomtéž PR)
 
@@ -24,6 +24,11 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 - [x] JSON-LD (Person) na homepage
 - [ ] Po merge: v Google Search Console přidat `https://klidne-podnikani.cz/` a odeslat sitemap
 - [x] Přesměrování `klidnepodnikani.online` → `klidne-podnikani.cz`
+
+## Fáze 1b — Klidné weby
+
+- [x] Podstránka služby (`weby.html`) s portfoliem realizací
+- [x] Ceník tvorby webů (sazby 900 / 650 Kč, balíček Klidný web 7 000 Kč)
 
 ## Fáze 2 — Výkon (bez čísel Lighthouse)
 

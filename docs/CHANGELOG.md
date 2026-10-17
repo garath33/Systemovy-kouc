@@ -2,6 +2,24 @@
 
 Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
+## 2026-10-17 — Sloučení s CI/SEO z main
+
+- Konflikt s `main` (PR #4) vyřešen: changelog a roadmapa drží obě sady změn.
+- `weby.html` je v `sitemap.xml`, `scripts/collect-site.sh` a v Lychee CI.
+
+## 2026-10-17 — Ceník tvorby webů
+
+- Na `weby.html` přibyl ceník: strategie 900 Kč / hod, kódování 650 Kč / hod, balíček Klidný web 7 000 Kč, pokročilá řešení na míru.
+- Doplněno pravidlo účtování hovorů nad 10 minut a čtyřkrokový proces Úvod → Návrh a revize → Kódování → Předání.
+- Úvodní stránka odkazuje na ceník webů a uvádí pevnou cenu balíčku.
+
+## 2026-10-17 — Podstránka Klidné weby
+
+- Nová stránka `weby.html`: služba tvorby klidných a rychlých statických webů (hero, srovnání, portfolio pěti realizací, proces, CTA).
+- Položka **Weby** v navigaci na všech stránkách.
+- Na úvodní stránce nabídka služby, v medailonku zmínka o webech, ve formuláři volba tématu.
+- Náhledy portfolia ve `images/portfolio/`.
+
 ## 2026-10-17 — Přesměrování .online
 
 - Hlavní web zůstává `https://klidne-podnikani.cz/` (tento repo).

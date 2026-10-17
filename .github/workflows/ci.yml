@@ -11,6 +11,7 @@ permissions:
 env:
   LYCHEE_INPUTS: >-
     index.html
+    weby.html
     o-mne.html
     reference.html
     kontakt.html
@@ -68,6 +69,8 @@ jobs:
       - name: Ověřit publikované soubory
         run: |
           test -f _site/index.html
+          test -f _site/weby.html
+          test -d _site/images/portfolio
           test -f _site/CNAME
           test -f _site/robots.txt
           test -f _site/sitemap.xml

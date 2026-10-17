@@ -84,6 +84,7 @@ Návštěvník staré adresy včetně podstránek skončí na stejné cestě na 
 ## Stránky
 
 - `index.html` — představení vlastními slovy, pilíře, ceník
+- `weby.html` — tvorba klidných statických webů a portfolio
 - `o-mne.html` — medailonek
 - `reference.html` — ohlasy
 - `kontakt.html` — rezervace a formulář

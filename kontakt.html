@@ -24,6 +24,7 @@
             <ul>
                 <li><a href="index.html">Domů</a></li>
                 <li><a href="index.html#cenik">Ceník</a></li>
+                <li><a href="weby.html">Weby</a></li>
                 <li><a href="reference.html">Reference</a></li>
                 <li><a href="o-mne.html">O Martinovi</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -52,7 +53,13 @@
                 <form class="form" action="https://formspree.io/f/mwvvkrgd" method="POST">
                     <input type="text" name="name" placeholder="Vaše jméno" required>
                     <input type="email" name="email" placeholder="Váš e-mail" required>
-                    <textarea name="message" placeholder="S čím potřebujete pomoct v podnikání?" rows="6" required></textarea>
+                    <select name="tema" id="tema" aria-label="Téma zprávy">
+                        <option value="">Čím mohu pomoct</option>
+                        <option value="podnikani">Klidné podnikání a systémy</option>
+                        <option value="web">Tvorba webu</option>
+                        <option value="obe">Obojí</option>
+                    </select>
+                    <textarea name="message" placeholder="S čím potřebujete pomoct?" rows="6" required></textarea>
                     <button type="submit" class="btn btn-solid">Odeslat zprávu</button>
                 </form>
             </div>
