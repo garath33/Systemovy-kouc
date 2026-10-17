@@ -84,8 +84,10 @@ Návštěvník staré adresy včetně podstránek skončí na stejné cestě na 
 
 ## Stránky
 
-- `index.html` — představení vlastními slovy, pilíře, ceník
+- `index.html` — představení vlastními slovy, pilíře, tvorba webů, ceník
+- `weby.html` — profesionální tvorba webů a portfolio
 - `o-mne.html` — medailonek
 - `reference.html` — ohlasy
-- `kontakt.html` — rezervace a formulář
+- `kontakt.html` — telefon a formulář (bez Calendly)
 - `ochrana-udaju.html`, `storno.html` — právní texty
+- `robots.txt`, `sitemap.xml` — indexace; kanonická adresa je `https://klidne-podnikani.cz/`

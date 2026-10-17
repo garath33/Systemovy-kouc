@@ -10,4 +10,12 @@
 
 **Ověření:** žádná změna runtime webu. Po merge stačí v Cursoru ověřit, že ignorované cesty nejsou v indexu projektu.
 
-**Mimo tuto fázi:** Lighthouse, sitemap, Search Console — až v dalších schválených krocích.
+**Mimo tuto fázi:** Lighthouse, Search Console — až v dalších schválených krocích.
+
+## SEO a obsah (2026-10-17)
+
+**Záměr:** sjednotit kanonickou adresu `.cz`, dát vyhledávačům sitemap a popsat cílovku i tvorbu webů.
+
+**Soubory:** `robots.txt`, `sitemap.xml`, `weby.html`, meta na HTML stránkách, `docs/seo.md`.
+
+**Ověření:** lokální statický server, kontrola canonical/sitemap a navigace na stránku Weby. Search Console až po merge.

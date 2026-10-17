@@ -5,11 +5,10 @@ Práce probíhá po schválených iteracích: feature větev → PR → schvále
 ## Hotovo
 
 - [x] Tokenová optimalizace a správa kontextu v Cursoru (`.cursorignore`, `.cursorrules`, `docs/`)
+- [x] SEO a obsah: cílovka, čeština, canonical `.cz`, `robots.txt`, `sitemap.xml`, Open Graph, stránka tvorby webů
 
 ## Navrženo (čeká na schválení další fáze)
 
 - [ ] CI kontrola odkazů (GitHub Actions — Lychee nebo htmlproofer)
-- [ ] `robots.txt` a `sitemap.xml`
-- [ ] Sjednocení SEO meta (canonical, Open Graph) na všech stránkách
 - [ ] Výkon obrázků a Core Web Vitals
-- [ ] Dokumentace dalších optimalizací po měření (PageSpeed, Search Console)
+- [ ] Search Console a měření po nasazení sitemap

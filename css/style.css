@@ -281,6 +281,12 @@ a {
     letter-spacing: -0.04em;
 }
 
+.page-hero-lead {
+    margin-top: 0.9rem;
+    max-width: 38rem;
+    color: rgba(255, 255, 255, 0.82);
+}
+
 .grid-2,
 .grid-3,
 .grid-4 {
@@ -542,6 +548,30 @@ a {
     white-space: nowrap;
 }
 
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.portfolio-card .kicker {
+    color: var(--teal);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+}
+
+.portfolio-card .muted {
+    margin-bottom: 1.2rem;
+}
+
+.portfolio-card .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
 .cta-band {
     background: var(--navy);
     color: var(--white);
@@ -669,7 +699,8 @@ a {
     .grid-4,
     .stat-row,
     .contact-grid,
-    .about-layout {
+    .about-layout,
+    .portfolio-grid {
         grid-template-columns: 1fr;
     }
 
