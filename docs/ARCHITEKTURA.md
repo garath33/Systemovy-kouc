@@ -67,6 +67,8 @@ Držíme poslední dvě velké verze **Chrome, Firefox, Safari** a **iPhone Safa
 
 ## Co dělat s pull requestem
 
+Platí trvale (2026-10-17), bez dalšího ptaní.
+
 Agent práci dokončí a otevře PR. Draft je jen když je práce rozbitá nebo čeká na tebe uprostřed. Hotová vlna = **Ready for review** (už ne šedý draft).
 
 Tvoje jediné tlačítko, až jsou fajfky zelené: **Squash and merge**. Tím to jde na živý web. **Ready for review** už mačkat nemusíš, pokud PR není draft. **Close pull request** jen když změnu nechceš.
