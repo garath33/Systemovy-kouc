@@ -14,7 +14,7 @@ Web zůstává na GitHub Pages. Nová doména `klidne-podnikani.cz` je v adminis
 
 1. U Hukotu přepište DNS podle tabulky níže.
 2. Až `klidne-podnikani.cz` ukazuje na adresy GitHubu, sloučte tuto změnu do `main`. Soubor `CNAME` pak GitHubu řekne, že web má běžet na nové doméně, a zapne se HTTPS.
-3. U Forpsi nastavte přesměrování `klidnepodnikani.online` na `https://klidne-podnikani.cz`.
+3. Stará `klidnepodnikani.online` se přesměruje zdarma druhým GitHub Pages (viz níže). Placené přesměrování u Forpsi nekupujte.
 
 Když se `CNAME` nasadí dřív, než DNS ukazuje na GitHub, stará adresa přestane zobrazovat web a nová ještě nebude připravená.
 
@@ -56,9 +56,20 @@ Když Hukot u CNAME sám doplní tečku na konci (`garath33.github.io.`), nechte
 
 Až záznamy sedí, v repozitáři `Systemovy-kouc` otevřete Settings → Pages, do Custom domain napište `klidne-podnikani.cz` a po vydání certifikátu zapněte Enforce HTTPS. Když GitHub ukáže ověřovací TXT záznam, přidejte ho v Hukotu beze změny a ostatní záznamy nechte.
 
-## Stará doména do expirace
+## Stará doména do expirace (zdarma)
 
-`klidnepodnikani.online` je u Forpsi. GitHub Pages umí jen jednu vlastní doménu, takže starou adresu nenechávejte namířenou na GitHub. V administraci Forpsi u ní zapněte přesměrování na `https://klidne-podnikani.cz` (včetně `www`). Až doména za rok vyprší, nic dalšího není potřeba.
+`klidnepodnikani.online` je u Forpsi. **Nepoužívejte placené „přesměrování“ / URL forward u Forpsi.** DNS této domény už míří na GitHub Pages a to stačí.
+
+GitHub Pages umí u jednoho webu jen jednu vlastní doménu, proto hlavní web poběží na `klidne-podnikani.cz` a stará adresa potřebuje **druhý, prázdný veřejný repozitář** jen s přesměrováním. Soubory k tomu jsou ve složce `redirect-online/`.
+
+1. Na GitHubu založte nový veřejný repozitář, třeba `klidnepodnikani-online`.
+2. Nahrajte do něj obsah složky `redirect-online/` (`index.html`, `404.html`, `CNAME`, `.nojekyll`).
+3. Až tento hlavní web už běží na `klidne-podnikani.cz` (soubor `CNAME` v `Systemovy-kouc` je nová doména), v novém repozitáři zapněte Pages ze větve `main` / kořene. Vlastní doména `klidnepodnikani.online` se vezme ze souboru `CNAME`. Zapněte Enforce HTTPS.
+4. U Forpsi **DNS neměňte**. Kořen už má A/AAAA GitHubu a `www` už má CNAME na `garath33.github.io`.
+
+Pořadí je důležité: nejdřív přepněte hlavní web na `.cz`, teprve potom přiřaďte starou doménu druhému repozitáři. GitHub nedovolí stejnou vlastní doménu u dvou webů najednou.
+
+Návštěvník staré adresy včetně podstránek skončí na stejné cestě na `https://klidne-podnikani.cz/`. Až `.online` za rok vyprší, druhý repozitář smažte. E-mail na webu zůstává `cesta-zmeny@email.cz`, MX u Forpsi kvůli webu nepotřebujete.
 
 ## Stránky
 
