@@ -20,7 +20,9 @@ Když se `CNAME` nasadí dřív, než DNS ukazuje na GitHub, stará adresa přes
 
 ## DNS u Hukotu (`klidne-podnikani.cz`)
 
-V DNS zóně smažte křížkem všechny řádky A a AAAA s prázdným názvem a řádek CNAME se jménem `*`. Jsou to adresy hostingu Hukot a web na nich neběží:
+Nejjednodušší je nahrát celou zónu: v Hukotu u DNS klikněte na **Importovat zónu** a nahrajte soubor [`dns/klidne-podnikani.cz.zone.txt`](dns/klidne-podnikani.cz.zone.txt). Po importu zkontrolujte tabulku: kořen má mířit na čtyři A a čtyři AAAA adresy GitHubu, `www` na `garath33.github.io`, a MX, CAA i SPF mají zůstat. Záznam CNAME se jménem `*` v nové zóně už není.
+
+Kdybyste to raději zadávali ručně, smažte křížkem všechny řádky A a AAAA s prázdným názvem a řádek CNAME se jménem `*`. Jsou to adresy hostingu Hukot a web na nich neběží:
 
 | Typ | Název | Hodnota |
 | --- | --- | --- |
