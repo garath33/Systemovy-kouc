@@ -21,6 +21,14 @@ Hledají spíš úlevu a parťáka než „koučovací balíček“.
 
 Značková: Martin Šimůnek, klidné podnikání, klidne-podnikani.cz.
 
+## Search Console
+
+Ověření vlastnictví je DNS TXT u Hukotu u kořene `klidne-podnikani.cz` (název prázdný). SPF neměňte, přidejte druhý TXT:
+
+`google-site-verification=AY7MZECLJq72JBrcv8lFhWrzC2H2MPE`
+
+Až Google ověří, v Search Console přidejte sitemap `https://klidne-podnikani.cz/sitemap.xml`.
+
 ## Co na webu je
 
 - `robots.txt` a `sitemap.xml` v tomto repozitáři (jinde neexistují)

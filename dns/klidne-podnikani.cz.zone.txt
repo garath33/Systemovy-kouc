@@ -3,7 +3,7 @@ $TTL 86400
 @ 3600  IN SOA   (
                  ns1.hukot.cz.   ; MNAME
                  hukot.hukot.cz. ; RNAME
-                 1792252500      ; SERIAL
+                 1792260000      ; SERIAL
                  28800           ; REFRESH
                  7200            ; RETRY
                  604800          ; EXPIRE
@@ -36,3 +36,4 @@ www 3600 IN CNAME garath33.github.io.
 
 ; TXT RECORDS
 @ 86400 IN TXT   "v=spf1 a mx include:spf.hukot.net ~all"
+@ 3600  IN TXT   "google-site-verification=AY7MZECLJq72JBrcv8lFhWrzC2H2MPE"
