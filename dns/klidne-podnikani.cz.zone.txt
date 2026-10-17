@@ -3,7 +3,7 @@ $TTL 86400
 @ 3600  IN SOA   (
                  ns1.hukot.cz.   ; MNAME
                  hukot.hukot.cz. ; RNAME
-                 1792250315      ; SERIAL
+                 1792252500      ; SERIAL
                  28800           ; REFRESH
                  7200            ; RETRY
                  604800          ; EXPIRE
@@ -36,6 +36,3 @@ www 3600 IN CNAME garath33.github.io.
 
 ; TXT RECORDS
 @ 86400 IN TXT   "v=spf1 a mx include:spf.hukot.net ~all"
-
-; CAA RECORDS
-@ 86400 IN CAA   0 issue "letsencrypt.org"

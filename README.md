@@ -33,7 +33,7 @@ Když se `CNAME` nasadí dřív, než DNS ukazuje na GitHub, stará adresa přes
 
 ## DNS u Hukotu (`klidne-podnikani.cz`)
 
-Nejjednodušší je nahrát celou zónu: v Hukotu u DNS klikněte na **Importovat zónu** a nahrajte soubor [`dns/klidne-podnikani.cz.zone.txt`](dns/klidne-podnikani.cz.zone.txt). Po importu zkontrolujte tabulku: kořen má mířit na čtyři A a čtyři AAAA adresy GitHubu, `www` na `garath33.github.io`, a MX, CAA i SPF mají zůstat. Záznam CNAME se jménem `*` v nové zóně už není.
+Nejjednodušší je nahrát celou zónu: v Hukotu u DNS klikněte na **Importovat zónu** a nahrajte soubor [`dns/klidne-podnikani.cz.zone.txt`](dns/klidne-podnikani.cz.zone.txt). Po importu zkontrolujte tabulku: kořen má mířit na čtyři A a čtyři AAAA adresy GitHubu, `www` na `garath33.github.io`, MX a SPF zůstanou. Záznam CNAME se jménem `*` v nové zóně už není. CAA Hukot po importu označí jako neplatný a zóna kvůli tomu přestane odpovídat — ten řádek smažte (nebo klikněte na **Odstranit neplatné záznamy**). GitHub Pages HTTPS bez něj funguje.
 
 Kdybyste to raději zadávali ručně, smažte křížkem všechny řádky A a AAAA s prázdným názvem a řádek CNAME se jménem `*`. Jsou to adresy hostingu Hukot a web na nich neběží:
 
@@ -49,7 +49,7 @@ Kdybyste to raději zadávali ručně, smažte křížkem všechny řádky A a A
 | AAAA | prázdné | `2a02:25b0:aaaa:1::8` |
 | CNAME | `*` | `klidne-podnikani.cz` |
 
-Záznamy MX (`mail.hukot.net`, `mx2.securitynet.cz`), CAA (`letsencrypt.org`) a TXT (SPF) nechte. Na web nemají vliv. E-mail na webu zůstává `cesta-zmeny@email.cz`.
+Záznamy MX (`mail.hukot.net`, `mx2.securitynet.cz`) a TXT (SPF) nechte. Na web nemají vliv. E-mail na webu zůstává `cesta-zmeny@email.cz`. Řádek CAA smažte, pokud ho Hukot označí červeně.
 
 Pak dole přidejte (název u kořene nechte prázdný, prioritu prázdnou, TTL `3600`):
 
