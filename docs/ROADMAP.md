@@ -23,7 +23,7 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 - [x] Canonical, description a Open Graph na všech stránkách
 - [x] JSON-LD (Person) na homepage
 - [ ] Po merge: v Google Search Console přidat `https://klidne-podnikani.cz/` a odeslat sitemap
-- [ ] Zapnout přesměrování staré `.online` podle README (samostatný GitHub repo)
+- [ ] Dokončit přesměrování v `klidnepodnikani-online` (`CNAME` bez `.txt`, nebo workflow)
 
 ## Fáze 2 — Výkon (bez čísel Lighthouse)
 

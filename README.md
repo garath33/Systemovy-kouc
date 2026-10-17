@@ -15,7 +15,7 @@ Název GitHub repozitáře **není** adresa webu. Adresu určuje soubor `CNAME` 
 | Repozitář | Co v něm je | Kam má mířit |
 | --- | --- | --- |
 | `Systemovy-kouc` (tento) | Celý web | `https://klidne-podnikani.cz/` |
-| nový, malý, třeba `klidnepodnikani-online` | jen složka `redirect-online/` | `https://klidnepodnikani.online/` → přesměruje na `.cz` |
+| [`klidnepodnikani-online`](https://github.com/garath33/klidnepodnikani-online) | jen přesměrování ze složky `redirect-online/` | `https://klidnepodnikani.online/` → `.cz` |
 
 Až budete chtít v názvech pořádek, **přejmenujte tento repozitář na místě** (Settings → General → Repository name) na `klidne-podnikani`. GitHub starou URL `garath33/Systemovy-kouc` přesměruje. Nedělejte to kopírováním do nového prázdného repozitáře.
 
@@ -73,12 +73,11 @@ Až záznamy sedí, v repozitáři `Systemovy-kouc` otevřete Settings → Pages
 
 `klidnepodnikani.online` je u Forpsi. **Nepoužívejte placené „přesměrování“ / URL forward u Forpsi.** DNS této domény už míří na GitHub Pages a to stačí.
 
-GitHub Pages umí u jednoho webu jen jednu vlastní doménu, proto hlavní web poběží na `klidne-podnikani.cz` a stará adresa potřebuje **druhý, prázdný veřejný repozitář** jen s přesměrováním. Soubory k tomu jsou ve složce `redirect-online/`.
+GitHub Pages umí u jednoho webu jen jednu vlastní doménu. Hlavní web je `klidne-podnikani.cz` v tomto repu. Stará adresa má vlastní repo [`klidnepodnikani-online`](https://github.com/garath33/klidnepodnikani-online). Šablona souborů je ve složce [`redirect-online/`](redirect-online/).
 
-1. Na GitHubu založte nový veřejný repozitář, třeba `klidnepodnikani-online`.
-2. Nahrajte do něj obsah složky `redirect-online/` (`index.html`, `404.html`, `CNAME`, `.nojekyll`).
-3. Až tento hlavní web už běží na `klidne-podnikani.cz` (soubor `CNAME` v `Systemovy-kouc` je nová doména), v novém repozitáři zapněte Pages ze větve `main` / kořene. Vlastní doména `klidnepodnikani.online` se vezme ze souboru `CNAME`. Zapněte Enforce HTTPS.
-4. U Forpsi **DNS neměňte**. Kořen už má A/AAAA GitHubu a `www` už má CNAME na `garath33.github.io`.
+Repo už existuje. HTML přesměrování v něm je správně, ale nahrání přes web GitHubu soubory přejmenovalo na `CNAME.txt` a `nojekyll.txt`, a Pages je nastavené na **GitHub Actions** bez workflow — proto `.online` teď vrací 404. Přesný postup opravy je v [`redirect-online/README.md`](redirect-online/README.md).
+
+U Forpsi **DNS neměňte**. Kořen už má A/AAAA GitHubu a `www` už má CNAME na `garath33.github.io`.
 
 Pořadí je důležité: nejdřív přepněte hlavní web na `.cz`, teprve potom přiřaďte starou doménu druhému repozitáři. GitHub nedovolí stejnou vlastní doménu u dvou webů najednou.
 
