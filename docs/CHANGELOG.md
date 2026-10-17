@@ -1,6 +1,13 @@
 # Changelog
 
-Zaznamenává změny webu klidnepodnikani.online. Novější záznamy jsou nahoře.
+Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
+
+## 2026-10-17 — Podstránka Klidné weby
+
+- Nová stránka `weby.html`: služba tvorby klidných a rychlých statických webů (hero, srovnání, portfolio pěti realizací, proces, CTA).
+- Položka **Weby** v navigaci na všech stránkách.
+- Na úvodní stránce nabídka služby, v medailonku zmínka o webech, ve formuláři volba tématu.
+- Náhledy portfolia ve `images/portfolio/`.
 
 ## 2026-10-17 — Tokenová optimalizace kontextu v Cursoru
 

@@ -6,6 +6,14 @@
         if (path === '' && href === 'index.html') link.classList.add('is-active');
     });
 
+    var tema = new URLSearchParams(window.location.search).get('tema');
+    var temaField = document.getElementById('tema');
+    if (tema && temaField) {
+        Array.prototype.forEach.call(temaField.options, function (opt) {
+            if (opt.value === tema) temaField.value = tema;
+        });
+    }
+
     var root = document.getElementById('quotes');
     if (!root) return;
     var slides = Array.prototype.slice.call(root.querySelectorAll('.slide'));

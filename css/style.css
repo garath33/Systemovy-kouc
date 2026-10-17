@@ -93,9 +93,9 @@ a {
 .nav ul a {
     text-decoration: none;
     color: var(--muted);
-    font-size: 0.86rem;
+    font-size: 0.84rem;
     font-weight: 600;
-    padding: 0.55rem 0.85rem;
+    padding: 0.55rem 0.7rem;
     border-radius: 999px;
 }
 
@@ -185,6 +185,10 @@ a {
     letter-spacing: -0.04em;
     max-width: 16ch;
     margin-bottom: 1.2rem;
+}
+
+.hero-service h1 {
+    max-width: 18ch;
 }
 
 .hero .lead {
@@ -363,6 +367,7 @@ a {
     height: 100%;
 }
 
+.kicker,
 .pillar .kicker {
     color: var(--teal);
     font-size: 0.75rem;
@@ -553,6 +558,154 @@ a {
     gap: 1.5rem;
 }
 
+.compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.compare-card ul {
+    margin: 0.9rem 0 0 1.05rem;
+    color: var(--muted);
+}
+
+.compare-card li {
+    margin-bottom: 0.4rem;
+}
+
+.compare-kicker-muted {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+}
+
+.compare-card-calm {
+    border-color: var(--teal);
+    background: linear-gradient(180deg, var(--teal-soft) 0%, #fff 42%);
+}
+
+.system-note {
+    background: var(--blue-soft);
+    border: 0;
+}
+
+.system-note h3 {
+    margin-bottom: 0.55rem;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem;
+}
+
+@media (min-width: 901px) {
+    .portfolio-card:last-child {
+        grid-column: 1 / -1;
+        max-width: calc(50% - 0.55rem);
+        justify-self: center;
+        width: 100%;
+    }
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.85rem;
+}
+
+.portfolio-shot {
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1.05rem;
+    background: #e8eef4;
+    aspect-ratio: 16 / 10;
+}
+
+.portfolio-shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.portfolio-shot:hover img {
+    transform: scale(1.03);
+}
+
+.portfolio-card .kicker {
+    color: var(--teal);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+    padding: 0 0.55rem;
+}
+
+.portfolio-card h3 {
+    padding: 0 0.55rem;
+}
+
+.portfolio-card .muted {
+    padding: 0 0.55rem;
+    flex: 1;
+}
+
+.portfolio-link {
+    display: inline-flex;
+    margin: 0.9rem 0.55rem 0.45rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.portfolio-link:hover {
+    text-decoration: underline;
+}
+
+.web-offer {
+    background: linear-gradient(180deg, #f4f9fd 0%, #fff 55%);
+    border-color: rgba(29, 111, 168, 0.22);
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) auto;
+    gap: 1.4rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.web-offer h2 {
+    letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
+}
+
+.web-offer p {
+    color: var(--muted);
+    margin: 0;
+    max-width: 38rem;
+}
+
+.form select {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 0.95rem 1rem;
+    font: inherit;
+    background: #fff;
+}
+
+.form select:focus {
+    outline: 2px solid rgba(29, 111, 168, 0.25);
+    border-color: var(--blue);
+}
+
 .cta-band h2 {
     letter-spacing: -0.03em;
     margin-bottom: 0.4rem;
@@ -669,7 +822,10 @@ a {
     .grid-4,
     .stat-row,
     .contact-grid,
-    .about-layout {
+    .about-layout,
+    .compare,
+    .portfolio,
+    .web-offer {
         grid-template-columns: 1fr;
     }
 
@@ -714,6 +870,10 @@ a {
     .cta-band {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .web-offer .btn {
+        width: 100%;
     }
 
     .menu-icon {

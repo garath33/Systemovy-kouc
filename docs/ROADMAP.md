@@ -5,6 +5,7 @@ Práce probíhá po schválených iteracích: feature větev → PR → schvále
 ## Hotovo
 
 - [x] Tokenová optimalizace a správa kontextu v Cursoru (`.cursorignore`, `.cursorrules`, `docs/`)
+- [x] Podstránka služby „Klidné weby“ (`weby.html`) s portfoliem realizací
 
 ## Navrženo (čeká na schválení další fáze)
 
