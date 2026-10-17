@@ -5,5 +5,12 @@ include_fragments = "full"
 accept = ["200..=299", "403", "429"]
 
 # mailto/tel se neověřují; Formspree je POST endpoint (GET vrací 405).
-exclude = ['^mailto:', '^tel:', 'formspree.io']
+# Vlastní kanonické URL na živém webu v PR ještě nemusí existovat (nová stránka = 404 do merge).
+# Interní soubory hlídá job Odkazy (lokální).
+exclude = [
+  '^mailto:',
+  '^tel:',
+  'formspree.io',
+  '^https://klidne-podnikani\\.cz/',
+]
 exclude_path = ['_site']

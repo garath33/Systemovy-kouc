@@ -13,9 +13,9 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 ## Fáze 0 — Proces
 
 - [x] `.cursorignore`, `.cursorrules`, `docs/`
-- [ ] CI (Lychee + sestavení `_site`) v PR #4
+- [x] CI (Lychee + sestavení `_site`) v PR #4; HTTP check nepadá na kanonických URL ještě nenasazených stránek
 
-## Fáze 1 — SEO základy (v tomtéž PR)
+## Fáze 1 — SEO základy
 
 Živý web je `.cz`. Stará `.online` přesměrovává z repa `klidnepodnikani-online`.
 
@@ -24,6 +24,13 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 - [x] JSON-LD (Person) na homepage
 - [ ] Po merge: v Google Search Console přidat `https://klidne-podnikani.cz/` a odeslat sitemap
 - [x] Přesměrování `klidnepodnikani.online` → `klidne-podnikani.cz`
+
+## Fáze 1b — SEO obsah a tvorba webů
+
+- [x] Cílovka v copy (malí a střední podnikatelé zahlcení provozem)
+- [x] Web jen česky, bez locale souborů
+- [x] Stránka `weby.html`, sekce na úvodu a portfolio
+- [x] Kontakt zůstává formulář + telefon (bez Calendly)
 
 ## Fáze 2 — Výkon (bez čísel Lighthouse)
 

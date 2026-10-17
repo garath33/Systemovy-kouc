@@ -67,6 +67,14 @@ Když Hukot u CNAME sám doplní tečku na konci (`garath33.github.io.`), nechte
 
 Až záznamy sedí, v tomto repozitáři otevřete Settings → Pages, do Custom domain napište `klidne-podnikani.cz` a po vydání certifikátu zapněte Enforce HTTPS. Když GitHub ukáže ověřovací TXT záznam, přidejte ho v Hukotu beze změny a ostatní záznamy nechte.
 
+Google Search Console (ověření celé domény) potřebuje **další** TXT u kořene. SPF nemažte. Přidejte:
+
+| Typ | Název | Priorita | TTL | Hodnota |
+| --- | --- | --- | --- | --- |
+| TXT | prázdné | prázdné | `3600` | `google-site-verification=AY7MZECLJq72JBrcv8lFhWrzC2H2MPE` |
+
+V Hukotu: DNS → **Přidat záznam**. Pak v Search Console **Ověřit**. Šíření může trvat minuty až hodiny. Až to projde: Sitemapy → `https://klidne-podnikani.cz/sitemap.xml`.
+
 ## Stará doména do expirace (zdarma)
 
 `klidnepodnikani.online` je u Forpsi. **Nepoužívejte placené „přesměrování“ / URL forward u Forpsi.** DNS této domény už míří na GitHub Pages a to stačí.
@@ -83,8 +91,10 @@ Návštěvník staré adresy včetně podstránek skončí na stejné cestě na 
 
 ## Stránky
 
-- `index.html` — představení vlastními slovy, pilíře, ceník
+- `index.html` — představení vlastními slovy, pilíře, tvorba webů, ceník
+- `weby.html` — profesionální tvorba webů a portfolio
 - `o-mne.html` — medailonek
 - `reference.html` — ohlasy
-- `kontakt.html` — rezervace a formulář
+- `kontakt.html` — telefon a formulář (bez Calendly)
 - `ochrana-udaju.html`, `storno.html` — právní texty
+- `robots.txt`, `sitemap.xml` — indexace; kanonická adresa je `https://klidne-podnikani.cz/`

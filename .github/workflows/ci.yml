@@ -16,11 +16,13 @@ env:
     kontakt.html
     ochrana-udaju.html
     storno.html
+    weby.html
     css/style.css
     README.md
     docs/CHANGELOG.md
     docs/ROADMAP.md
     docs/optimalizace.md
+    docs/seo.md
 
 jobs:
   links-offline:
@@ -71,6 +73,7 @@ jobs:
           test -f _site/CNAME
           test -f _site/robots.txt
           test -f _site/sitemap.xml
+          test -f _site/weby.html
           test -d _site/css
           test -d _site/js
           test -d _site/images
