@@ -17,13 +17,13 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 
 ## Fáze 1 — SEO základy (v tomtéž PR)
 
-Živý web je `.cz`. Stará `.online` zatím vrací 404, dokud nepoběží druhý repo ze složky `redirect-online/`.
+Živý web je `.cz`. Stará `.online` přesměrovává z repa `klidnepodnikani-online`.
 
 - [x] `robots.txt` + `sitemap.xml`
 - [x] Canonical, description a Open Graph na všech stránkách
 - [x] JSON-LD (Person) na homepage
 - [ ] Po merge: v Google Search Console přidat `https://klidne-podnikani.cz/` a odeslat sitemap
-- [ ] Dokončit přesměrování v `klidnepodnikani-online` (`CNAME` bez `.txt`, nebo workflow)
+- [x] Přesměrování `klidnepodnikani.online` → `klidne-podnikani.cz`
 
 ## Fáze 2 — Výkon (bez čísel Lighthouse)
 

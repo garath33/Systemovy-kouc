@@ -5,7 +5,7 @@ Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 ## 2026-10-17 — Přesměrování .online
 
 - Hlavní web zůstává `https://klidne-podnikani.cz/` (tento repo).
-- Přesměrování `.online` patří do https://github.com/garath33/klidnepodnikani-online (šablona `redirect-online/`).
+- Přesměrování `.online` běží v https://github.com/garath33/klidnepodnikani-online (šablona `redirect-online/`).
 
 ## 2026-10-17 — SEO základy a CI
 

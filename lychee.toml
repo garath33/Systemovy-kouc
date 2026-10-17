@@ -5,6 +5,5 @@ include_fragments = "full"
 accept = ["200..=299", "403", "429"]
 
 # mailto/tel se neověřují; Formspree je POST endpoint (GET vrací 405).
-# .online zatím 404 (špatné názvy souborů v klidnepodnikani-online); po opravě přesměrování lze vyloučení zrušit.
-exclude = ['^mailto:', '^tel:', 'formspree.io', 'klidnepodnikani.online']
+exclude = ['^mailto:', '^tel:', 'formspree.io']
 exclude_path = ['_site']

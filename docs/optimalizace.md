@@ -16,11 +16,11 @@
 
 **Živý web:** `https://klidne-podnikani.cz/` (GitHub Pages, HTTPS). `www` přesměruje sem.
 
-**Stará adresa:** repo [`klidnepodnikani-online`](https://github.com/garath33/klidnepodnikani-online) existuje, custom domain i HTTPS certifikát jsou nastavené. Veřejná URL pořád vrací 404, protože v kořeni je `CNAME.txt` / `nojekyll.txt` místo `CNAME` / `.nojekyll` a Pages staví přes Actions bez workflow. Oprava: `redirect-online/README.md`.
+**Stará adresa:** [`klidnepodnikani-online`](https://github.com/garath33/klidnepodnikani-online) běží na `https://klidnepodnikani.online/` (HTTPS). Homepage vrací 200 a v prohlížeči přesměruje na `.cz`. Podstránky obsluhuje `404.html` (HTTP 404 + stejné přesměrování v prohlížeči).
 
 **CI:** lokální odkazy, HTTP odkazy (Formspree a `.online` jsou vyloučené), sestavení `_site` včetně `robots.txt` a `sitemap.xml`.
 
 **Po merge (uděláš ty, není to kód):**
 1. Google Search Console → přidat službu `https://klidne-podnikani.cz/` (ověření přes DNS u Hukotu nebo HTML soubor, až řekneš).
 2. Odeslat `https://klidne-podnikani.cz/sitemap.xml`.
-3. V `klidnepodnikani-online` opravit názvy `CNAME` a `.nojekyll` (viz `redirect-online/README.md`).
+3. Přesměrování `.online` je hotové.

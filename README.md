@@ -75,7 +75,7 @@ Až záznamy sedí, v repozitáři `Systemovy-kouc` otevřete Settings → Pages
 
 GitHub Pages umí u jednoho webu jen jednu vlastní doménu. Hlavní web je `klidne-podnikani.cz` v tomto repu. Stará adresa má vlastní repo [`klidnepodnikani-online`](https://github.com/garath33/klidnepodnikani-online). Šablona souborů je ve složce [`redirect-online/`](redirect-online/).
 
-Repo už existuje. HTML přesměrování v něm je správně, ale nahrání přes web GitHubu soubory přejmenovalo na `CNAME.txt` a `nojekyll.txt`, a Pages je nastavené na **GitHub Actions** bez workflow — proto `.online` teď vrací 404. Přesný postup opravy je v [`redirect-online/README.md`](redirect-online/README.md).
+Repo [`klidnepodnikani-online`](https://github.com/garath33/klidnepodnikani-online) běží. `https://klidnepodnikani.online/` přesměruje na `.cz`. Šablona zůstává ve [`redirect-online/`](redirect-online/).
 
 U Forpsi **DNS neměňte**. Kořen už má A/AAAA GitHubu a `www` už má CNAME na `garath33.github.io`.
 
