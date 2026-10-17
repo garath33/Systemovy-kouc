@@ -24,10 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
       - name: Collect static files
-        run: |
-          mkdir _site
-          cp index.html o-mne.html reference.html kontakt.html ochrana-udaju.html storno.html weby.html robots.txt sitemap.xml .nojekyll CNAME _site/
-          cp -r css js images _site/
+        run: bash scripts/collect-site.sh
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

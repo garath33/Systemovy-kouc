@@ -7,15 +7,25 @@ Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 - Cílovka v copy: malí a střední podnikatelé zahlcení provozem.
 - Web zůstává jen česky (`lang="cs"`), bez locale souborů.
 - Canonical, Open Graph a `og:locale=cs_CZ` na všech stránkách, ostře `https://klidne-podnikani.cz/`.
-- Přidány `robots.txt` a `sitemap.xml` (v repo dřív nebyly).
 - Nová stránka `weby.html` a sekce na úvodu: profesionální tvorba webů + portfolio (Raclette Point, Flow Změny, Ecomo).
 - Kontakt beze změny: telefon a formulář, bez Calendly.
 - Poznámky: `docs/seo.md`.
 
+## 2026-10-17 — Přesměrování .online
+
+- Hlavní web zůstává `https://klidne-podnikani.cz/` (tento repo).
+- Přesměrování `.online` běží v https://github.com/garath33/klidnepodnikani-online (šablona `redirect-online/`).
+
+## 2026-10-17 — SEO základy a CI
+
+- Kanonická adresa webu je `https://klidne-podnikani.cz/` (ne `.online`).
+- Přidány `robots.txt` a `sitemap.xml`, nasazují se spolu s Pages.
+- Na všech stránkách: description, canonical, Open Graph, sdílený náhledový obrázek.
+- Na homepage JSON-LD (Person a služba).
+- Workflow CI: Lychee (lokální i HTTP) a ověření `_site`.
+- Deploy `pages.yml` používá `scripts/collect-site.sh`.
+
 ## 2026-10-17 — Tokenová optimalizace kontextu v Cursoru
 
-- Přidán kořenový soubor `.cursorignore` (generované a těžké cesty mimo index AI).
-- Přidán kořenový soubor `.cursorrules` (minimalizace tokenů, bezpečný refaktoring, dokumentace, PR workflow).
-- Založena složka `docs/` s tímto changelogem, roadmapou a poznámkami k optimalizacím.
-
-Stránky webu, CSS, JS ani obrázky se v této iteraci nemění.
+- Přidán kořenový soubor `.cursorignore` a `.cursorrules`.
+- Založena složka `docs/`.

@@ -10,12 +10,25 @@
 
 **Ověření:** žádná změna runtime webu. Po merge stačí v Cursoru ověřit, že ignorované cesty nejsou v indexu projektu.
 
-**Mimo tuto fázi:** Lighthouse, Search Console — až v dalších schválených krocích.
+**Mimo tuto fázi:** Lighthouse a analytiku teď neděláme.
+
+## CI a SEO základy (2026-10-17)
+
+**Živý web:** `https://klidne-podnikani.cz/` (GitHub Pages, HTTPS). `www` přesměruje sem.
+
+**Stará adresa:** [`klidnepodnikani-online`](https://github.com/garath33/klidnepodnikani-online) běží na `https://klidnepodnikani.online/` (HTTPS). Homepage vrací 200 a v prohlížeči přesměruje na `.cz`. Podstránky obsluhuje `404.html` (HTTP 404 + stejné přesměrování v prohlížeči).
+
+**CI:** lokální odkazy, HTTP odkazy (Formspree a `.online` jsou vyloučené), sestavení `_site` včetně `robots.txt` a `sitemap.xml`.
+
+**Po merge (uděláš ty, není to kód):**
+1. Google Search Console → přidat službu `https://klidne-podnikani.cz/` (ověření přes DNS u Hukotu nebo HTML soubor, až řekneš).
+2. Odeslat `https://klidne-podnikani.cz/sitemap.xml`.
+3. Přesměrování `.online` je hotové.
 
 ## SEO a obsah (2026-10-17)
 
-**Záměr:** sjednotit kanonickou adresu `.cz`, dát vyhledávačům sitemap a popsat cílovku i tvorbu webů.
+**Záměr:** popsat cílovku v copy a přidat tvorbu webů jako součást nabídky.
 
-**Soubory:** `robots.txt`, `sitemap.xml`, `weby.html`, meta na HTML stránkách, `docs/seo.md`.
+**Soubory:** `weby.html`, meta na HTML stránkách, `docs/seo.md`, sitemap včetně `weby.html`.
 
-**Ověření:** lokální statický server, kontrola canonical/sitemap a navigace na stránku Weby. Search Console až po merge.
+**Ověření:** lokální statický server, navigace na stránku Weby, CI (Lychee + `_site`). Search Console až po merge.

@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  LYCHEE_INPUTS: >-
+    index.html
+    o-mne.html
+    reference.html
+    kontakt.html
+    ochrana-udaju.html
+    storno.html
+    weby.html
+    css/style.css
+    README.md
+    docs/CHANGELOG.md
+    docs/ROADMAP.md
+    docs/optimalizace.md
+    docs/seo.md
+
+jobs:
+  links-offline:
+    name: Odkazy (lokální)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zkontrolovat interní odkazy a soubory
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          lycheeVersion: v0.24.2
+          args: >-
+            --config lychee.toml
+            --offline
+            --root-dir ${{ github.workspace }}
+            --exclude-path _site
+            ${{ env.LYCHEE_INPUTS }}
+
+  links-online:
+    name: Odkazy (externí)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zkontrolovat HTTP odkazy
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          lycheeVersion: v0.24.2
+          args: >-
+            --config lychee.toml
+            --root-dir ${{ github.workspace }}
+            --exclude-path _site
+            ${{ env.LYCHEE_INPUTS }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  collect-site:
+    name: Sestavení _site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Posbírat statické soubory
+        run: bash scripts/collect-site.sh
+      - name: Ověřit publikované soubory
+        run: |
+          test -f _site/index.html
+          test -f _site/CNAME
+          test -f _site/robots.txt
+          test -f _site/sitemap.xml
+          test -f _site/weby.html
+          test -d _site/css
+          test -d _site/js
+          test -d _site/images
