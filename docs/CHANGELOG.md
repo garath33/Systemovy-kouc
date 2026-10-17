@@ -1,11 +1,17 @@
 # Changelog
 
-Zaznamenává změny webu klidnepodnikani.online. Novější záznamy jsou nahoře.
+Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
+
+## 2026-10-17 — SEO základy a CI
+
+- Kanonická adresa webu je `https://klidne-podnikani.cz/` (ne `.online`).
+- Přidány `robots.txt` a `sitemap.xml`, nasazují se spolu s Pages.
+- Na všech stránkách: description, canonical, Open Graph, sdílený náhledový obrázek.
+- Na homepage JSON-LD (Person).
+- Workflow CI: Lychee (lokální i HTTP) a ověření `_site`.
+- Deploy `pages.yml` používá `scripts/collect-site.sh`.
 
 ## 2026-10-17 — Tokenová optimalizace kontextu v Cursoru
 
-- Přidán kořenový soubor `.cursorignore` (generované a těžké cesty mimo index AI).
-- Přidán kořenový soubor `.cursorrules` (minimalizace tokenů, bezpečný refaktoring, dokumentace, PR workflow).
-- Založena složka `docs/` s tímto changelogem, roadmapou a poznámkami k optimalizacím.
-
-Stránky webu, CSS, JS ani obrázky se v této iteraci nemění.
+- Přidán kořenový soubor `.cursorignore` a `.cursorrules`.
+- Založena složka `docs/`.

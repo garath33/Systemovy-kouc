@@ -1,0 +1,10 @@
+# Formát pro Lychee v0.24.x (lychee-action@v2).
+verbose = "info"
+no_progress = true
+include_fragments = "full"
+accept = ["200..=299", "403", "429"]
+
+# mailto/tel se neověřují; Formspree je POST endpoint (GET vrací 405).
+# Stará .online zatím 404, dokud nepoběží přesměrovací repo (redirect-online/).
+exclude = ['^mailto:', '^tel:', 'formspree.io', 'klidnepodnikani.online']
+exclude_path = ['_site']

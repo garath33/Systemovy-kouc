@@ -2,6 +2,7 @@ node_modules/
 .next/
 dist/
 build/
+_site/
 package-lock.json
 *.log
 .git/
