@@ -13,6 +13,9 @@
     <meta property="og:title" content="Kontakt | Martin Šimůnek">
     <meta property="og:description" content="Domluvme si 30min hovor zdarma. Zavolejte Martinovi Šimůnkovi nebo napište přes formulář.">
     <meta property="og:image" content="https://klidne-podnikani.cz/images/martin_headshot.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,7 +23,7 @@
         <nav class="nav wrap">
             <a href="index.html" class="logo">Martin Šimůnek</a>
             <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
-            <label for="menu-checkbox" class="menu-icon" aria-label="Menu">☰</label>
+            <label for="menu-checkbox" class="menu-icon" aria-label="Menu" aria-expanded="false">☰</label>
             <ul>
                 <li><a href="index.html">Domů</a></li>
                 <li><a href="index.html#cenik">Ceník</a></li>
@@ -49,11 +52,19 @@
             </div>
             <div class="card">
                 <h2>Napsat zprávu</h2>
-                <form class="form" action="https://formspree.io/f/mwvvkrgd" method="POST">
-                    <input type="text" name="name" placeholder="Vaše jméno" required>
-                    <input type="email" name="email" placeholder="Váš e-mail" required>
-                    <textarea name="message" placeholder="S čím potřebujete pomoct v podnikání?" rows="6" required></textarea>
+                <form class="form" id="contact-form" action="https://formspree.io/f/mwvvkrgd" method="POST">
+                    <label for="name">Jméno</label>
+                    <input id="name" type="text" name="name" autocomplete="name" required>
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" autocomplete="email" required>
+                    <label for="message">Zpráva</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <label class="form-consent">
+                        <input type="checkbox" name="consent" value="ano" required>
+                        <span>Souhlasím se <a href="ochrana-udaju.html">zpracováním osobních údajů</a>.</span>
+                    </label>
                     <button type="submit" class="btn btn-solid">Odeslat zprávu</button>
+                    <p class="form-status" hidden></p>
                 </form>
             </div>
         </div>

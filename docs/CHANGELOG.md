@@ -2,6 +2,13 @@
 
 Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
+## 2026-10-17 — Dočištění výkonu a formuláře
+
+- Z ochrany údajů pryč Reservio; zůstává jen Formspree.
+- Font se načítá přes `preconnect` a `<link>`, ne přes CSS `@import`.
+- Kontaktní formulář má labely, souhlas s údaji a odeslání bez odchodu na Formspree.
+- Mobilní menu se zavře po volbě odkazu. Karusel drží výšku. Fotka na O mně má poměr 3:4.
+
 ## 2026-10-17 — Rozhodnutí architektury (fáze 0)
 
 - Zapsáno v `docs/ARCHITEKTURA.md`: GitHub Pages, bez bundleru, Formspree, vzhled beze změny, preview jen z `main`.

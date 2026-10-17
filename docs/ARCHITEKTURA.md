@@ -45,18 +45,13 @@ Bezplatný plán: **50 odeslání za měsíc**, 30 dní historie, základní spa
 
 Pro poptávky kouče je 50/měsíc velká rezerva. Až by to nestačilo, stačí v Formspree přejít na Personal (~200/měsíc), kód webu se nemění.
 
-### Až budeme formulář čistit (až po schválení, ne teď)
-
-- Viditelné `<label>` místo jen placeholderů (přístupnost).
-- Krátký souhlas se zpracováním údajů (odkaz na `ochrana-udaju.html`).
-- AJAX odeslání, ať člověk neopouští web (na free plánu to jde).
-- `autocomplete` a `inputmode` na telefon, až pole přibude.
+Formulář má labely, souhlas s odkazem na ochranu údajů a AJAX odeslání (návštěvník zůstane na webu). Endpoint a pole `name` / `email` / `message` se nemění.
 
 ## Právní stránky
 
 `ochrana-udaju.html` a `storno.html` bereme **jako konečné**, dokud je nebude měnit právník. Copy v nich v optimalizačních PR nešahat.
 
-Poznámka do zásobníku (neměnit bez tebe): ochrana údajů zmiňuje **Reservio**, na webu ale žádná rezervace Reservio není. Formulář je Formspree. Až se texty budou otevírat, tuhle větu sjednotit.
+Reservio v ochraně údajů už není. Formulář zpracovává jen Formspree.
 
 ## Design
 

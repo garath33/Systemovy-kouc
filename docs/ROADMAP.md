@@ -28,19 +28,22 @@ Rozhodnutí z otázek 4–6 jsou v [`docs/ARCHITEKTURA.md`](ARCHITEKTURA.md).
 - [ ] Po merge: v Google Search Console přidat `https://klidne-podnikani.cz/` a odeslat sitemap
 - [x] Přesměrování `klidnepodnikani.online` → `klidne-podnikani.cz`
 
-## Fáze 2 — Výkon (navrženo, čeká na schválení)
+## Fáze 2 — Výkon a dočištění UI
 
-Bez změny vzhledu. Priorita podle [`docs/optimalizace.md`](optimalizace.md):
+Bez změny vzhledu.
 
-- [ ] Google Fonts bez blokujícího `@import` (nebo systémový stack)
-- [ ] `width`/`height` nebo `aspect-ratio` u všech fotek, `loading="lazy"` mimo hero
+- [x] Google Fonts přes `preconnect` + `<link>` místo `@import`
+- [x] Poměr fotky na O mně sjednocený s CSS, `loading="lazy"` mimo hero
+- [x] Stabilní výška karuselu ohlasů
+- [x] Mobilní menu se zavře po kliknutí na odkaz
+- [x] Formulář: labely, souhlas, AJAX (zůstat na webu)
+- [x] Pryč zmínka o Reservio v ochraně údajů
 - [ ] Až potom WebP — bez Vite/11ty, ideálně jen nové soubory vedle JPG
 
-## Fáze 3 — Konverze a údržba (až po výkonu)
+## Fáze 3 — Údržba kódu
 
-- [ ] Formulář: labely, souhlas s údaji, zůstat na webu po odeslání (AJAX Formspree)
 - [ ] Sdílená hlavička/patička jen když začne bolet kopírování; to by už chtělo malý build
-- [ ] Copy jen se schválením. Právní texty neměnit.
+- [ ] Copy jen se schválením. Právní texty neměnit, ledaže řekneš (jako u Reservio).
 
 ## Fáze 4 — Dokumentace
 
