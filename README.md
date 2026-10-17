@@ -5,8 +5,21 @@ Web **podpory a kouče pro klidné podnikání**.
 ## Adresy
 
 - Web: https://klidne-podnikani.cz/
-- GitHub: https://github.com/garath33/Systemovy-kouc
-- Stará adresa do expirace: https://klidnepodnikani.online/ (přesměrovat na novou, viz níže)
+- GitHub (tento web): https://github.com/garath33/Systemovy-kouc
+- Stará adresa do expirace: https://klidnepodnikani.online/
+
+## Dva repozitáře, ať je to čitelné
+
+Název GitHub repozitáře **není** adresa webu. Adresu určuje soubor `CNAME` a Settings → Pages. Přesouvat tento web do nového repozitáře pojmenovaného `klidnepodnikani.online` nedává smysl: to je stará doména, kterou chcete nechat vypršet, a zbytečně by se ztratila historie, otevřené PR a nastavení Pages.
+
+| Repozitář | Co v něm je | Kam má mířit |
+| --- | --- | --- |
+| `Systemovy-kouc` (tento) | Celý web | `https://klidne-podnikani.cz/` |
+| nový, malý, třeba `klidnepodnikani-online` | jen složka `redirect-online/` | `https://klidnepodnikani.online/` → přesměruje na `.cz` |
+
+Až budete chtít v názvech pořádek, **přejmenujte tento repozitář na místě** (Settings → General → Repository name) na `klidne-podnikani`. GitHub starou URL `garath33/Systemovy-kouc` přesměruje. Nedělejte to kopírováním do nového prázdného repozitáře.
+
+U nového přesměrovacího repozitáře do Description napište třeba: `Přesměrování klidnepodnikani.online na klidne-podnikani.cz`. U tohoto webu klidně: `Web klidne-podnikani.cz`. Až `.online` vyprší, malý repozitář smažte.
 
 Web zůstává na GitHub Pages. Nová doména `klidne-podnikani.cz` je v administraci Hukot (`admin.hukot.net`). Nameservery neměňte a na Hukotu nespouštějte hosting ani „Přepsat data ze šablony pro cluster“ — to by vrátilo adresy Hukotu a web by se neukázal.
 
