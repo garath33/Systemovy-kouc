@@ -13,7 +13,7 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 ## Fáze 0 — Proces
 
 - [x] `.cursorignore`, `.cursorrules`, `docs/`
-- [x] CI (Lychee + sestavení `_site`) v PR #4
+- [x] CI (Lychee + sestavení `_site`) v PR #4; HTTP check nepadá na kanonických URL ještě nenasazených stránek
 
 ## Fáze 1 — SEO základy
 

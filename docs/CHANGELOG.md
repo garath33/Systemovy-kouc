@@ -10,6 +10,7 @@ Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 - Nová stránka `weby.html` a sekce na úvodu: profesionální tvorba webů + portfolio (Raclette Point, Flow Změny, Ecomo).
 - Kontakt beze změny: telefon a formulář, bez Calendly.
 - Poznámky: `docs/seo.md`.
+- Lychee (externí) nekontroluje kanonické URL na živém `klidne-podnikani.cz` — nová stránka tam před mergem dává 404.
 
 ## 2026-10-17 — Přesměrování .online
 

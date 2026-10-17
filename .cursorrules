@@ -12,9 +12,11 @@
 
 - Při vícejazyčných webech vyvíjej a testuj strukturu výhradně na originálním jazyku. Překlady odděluj do lokalizačních souborů (JSON) a mutace ověřuj až hromadně před finálním vydáním.
 
-- Kontrolu nefunkčních odkazů (broken links / 404) přenechej automatickému CI/CD pipeline (GitHub Actions - např. Lychee nebo htmlproofer).
+- Kontrolu nefunkčních odkazů (broken links / 404) přenechej automatickému CI/CD pipeline (GitHub Actions — Lychee). Po pushi počkej na výsledek CI (subscribe na GitHub CI větve). Při failu oprav, znovu pushni a znovu počkej. Odkaz na PR posílej až když jsou checky zelené.
 
-- Před mergem do `main` vždy připrav PR, odkaž na preview prostředí, proveď závěrečnou kontrolu celé finální verze a vyžádej si schválení uživatele. Kde je to možné, přilož vizuální screenshoty.
+- PR otevírej jako **ready for review**, ne jako draft, pokud uživatel výslovně nechce draft.
+
+- Před mergem do `main` vždy připrav PR, proveď závěrečnou kontrolu a vyžádej si schválení. Kde je to možné, přilož vizuální screenshoty.
 
 ## 2. Architektura a kódové standardy
 
