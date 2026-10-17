@@ -6,6 +6,7 @@ Práce probíhá po schválených iteracích: feature větev → PR → schvále
 
 - [x] Tokenová optimalizace a správa kontextu v Cursoru (`.cursorignore`, `.cursorrules`, `docs/`)
 - [x] Podstránka služby „Klidné weby“ (`weby.html`) s portfoliem realizací
+- [x] Ceník tvorby webů (sazby 900 / 650 Kč, balíček Klidný web 7 000 Kč)
 
 ## Navrženo (čeká na schválení další fáze)
 

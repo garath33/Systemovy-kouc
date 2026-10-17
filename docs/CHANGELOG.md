@@ -2,6 +2,12 @@
 
 Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
+## 2026-10-17 — Ceník tvorby webů
+
+- Na `weby.html` přibyl ceník: strategie 900 Kč / hod, kódování 650 Kč / hod, balíček Klidný web 7 000 Kč, pokročilá řešení na míru.
+- Doplněno pravidlo účtování hovorů nad 10 minut a čtyřkrokový proces Úvod → Návrh a revize → Kódování → Předání.
+- Úvodní stránka odkazuje na ceník webů a uvádí pevnou cenu balíčku.
+
 ## 2026-10-17 — Podstránka Klidné weby
 
 - Nová stránka `weby.html`: služba tvorby klidných a rychlých statických webů (hero, srovnání, portfolio pěti realizací, proces, CTA).
