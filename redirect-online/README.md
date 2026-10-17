@@ -1,6 +1,6 @@
 # Přesměrování klidnepodnikani.online
 
-Tyto soubory patří do repozitáře [garath33/klidnepodnikani-online](https://github.com/garath33/klidnepodnikani-online). Hlavní web zůstává v `Systemovy-kouc` na `https://klidne-podnikani.cz/`.
+Tyto soubory patří do repozitáře [garath33/klidnepodnikani-online](https://github.com/garath33/klidnepodnikani-online). Hlavní web zůstává v [klidne-podnikani.cz](https://github.com/garath33/klidne-podnikani.cz) na `https://klidne-podnikani.cz/`.
 
 Do kořene toho malého repa musí jít **přesně tyto názvy** (ne `.txt`):
 

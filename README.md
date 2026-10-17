@@ -5,7 +5,7 @@ Web **podpory a kouče pro klidné podnikání**.
 ## Adresy
 
 - Web: https://klidne-podnikani.cz/
-- GitHub (tento web): https://github.com/garath33/Systemovy-kouc
+- GitHub (tento web): https://github.com/garath33/klidne-podnikani.cz
 - Stará adresa do expirace: https://klidnepodnikani.online/
 
 ## Dva repozitáře, ať je to čitelné
@@ -14,12 +14,10 @@ Název GitHub repozitáře **není** adresa webu. Adresu určuje soubor `CNAME` 
 
 | Repozitář | Co v něm je | Kam má mířit |
 | --- | --- | --- |
-| `Systemovy-kouc` (tento) | Celý web | `https://klidne-podnikani.cz/` |
+| `klidne-podnikani.cz` (tento, dříve `Systemovy-kouc`) | Celý web | `https://klidne-podnikani.cz/` |
 | [`klidnepodnikani-online`](https://github.com/garath33/klidnepodnikani-online) | jen přesměrování ze složky `redirect-online/` | `https://klidnepodnikani.online/` → `.cz` |
 
-Až budete chtít v názvech pořádek, **přejmenujte tento repozitář na místě** (Settings → General → Repository name) na `klidne-podnikani`. GitHub starou URL `garath33/Systemovy-kouc` přesměruje. Nedělejte to kopírováním do nového prázdného repozitáře.
-
-U nového přesměrovacího repozitáře do Description napište třeba: `Přesměrování klidnepodnikani.online na klidne-podnikani.cz`. U tohoto webu klidně: `Web klidne-podnikani.cz`. Až `.online` vyprší, malý repozitář smažte.
+Až `.online` vyprší, malý repozitář smažte. GitHub starou URL `garath33/Systemovy-kouc` přesměruje sem.
 
 Web zůstává na GitHub Pages. Nová doména `klidne-podnikani.cz` je v administraci Hukot (`admin.hukot.net`). Nameservery neměňte a na Hukotu nespouštějte hosting ani „Přepsat data ze šablony pro cluster“ — to by vrátilo adresy Hukotu a web by se neukázal.
 
@@ -67,7 +65,7 @@ Pak dole přidejte (název u kořene nechte prázdný, prioritu prázdnou, TTL `
 
 Když Hukot u CNAME sám doplní tečku na konci (`garath33.github.io.`), nechte ji. Šíření DNS trvá často 15–60 minut, občas až 24 hodin. DNSSEC teď nezapínejte.
 
-Až záznamy sedí, v repozitáři `Systemovy-kouc` otevřete Settings → Pages, do Custom domain napište `klidne-podnikani.cz` a po vydání certifikátu zapněte Enforce HTTPS. Když GitHub ukáže ověřovací TXT záznam, přidejte ho v Hukotu beze změny a ostatní záznamy nechte.
+Až záznamy sedí, v tomto repozitáři otevřete Settings → Pages, do Custom domain napište `klidne-podnikani.cz` a po vydání certifikátu zapněte Enforce HTTPS. Když GitHub ukáže ověřovací TXT záznam, přidejte ho v Hukotu beze změny a ostatní záznamy nechte.
 
 ## Stará doména do expirace (zdarma)
 
