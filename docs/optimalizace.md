@@ -24,3 +24,13 @@
 1. Google Search Console → přidat službu `https://klidne-podnikani.cz/` (ověření přes DNS u Hukotu nebo HTML soubor, až řekneš).
 2. Odeslat `https://klidne-podnikani.cz/sitemap.xml`.
 3. Přesměrování `.online` je hotové.
+
+## UI audit (2026-10-17, bez úprav kódu)
+
+Známé havárie nebyly. Dočištěno 2026-10-17: font bez `@import`, labely a AJAX u formuláře, zavření menu, poměr fotky na O mně, stabilní karusel. Zbývá volitelně WebP a `og:image:alt`.
+
+Prohlížeče: viz `docs/ARCHITEKTURA.md`. Neoptimalizovat pro starý Explorer.
+
+## Formulář a limity
+
+Viz `docs/ARCHITEKTURA.md`. Shrnutí: nechat Formspree `mwvvkrgd`, 50 odeslání/měsíc na free plánu stačí, v CI Formspree nepingovat GET-em.

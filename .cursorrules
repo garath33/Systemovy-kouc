@@ -14,7 +14,7 @@
 
 - Kontrolu nefunkčních odkazů (broken links / 404) přenechej automatickému CI/CD pipeline (GitHub Actions - např. Lychee nebo htmlproofer).
 
-- Před mergem do `main` vždy připrav PR, odkaž na preview prostředí, proveď závěrečnou kontrolu celé finální verze a vyžádej si schválení uživatele. Kde je to možné, přilož vizuální screenshoty.
+- Před mergem do `main` vždy připrav PR. Až je práce hotová a má jít na web, PR **není draft** (Ready for review). Merge do `main` mačká jen Martin. Automatický merge nezapínat. Tohle je stálé pravidlo — nečekej na další potvrzení a nevracej hotové PR do draftu.
 
 ## 2. Architektura a kódové standardy
 

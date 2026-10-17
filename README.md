@@ -88,3 +88,5 @@ Návštěvník staré adresy včetně podstránek skončí na stejné cestě na 
 - `reference.html` — ohlasy
 - `kontakt.html` — rezervace a formulář
 - `ochrana-udaju.html`, `storno.html` — právní texty
+
+Rozhodnutí o hostingu, formuláři a CI: [`docs/ARCHITEKTURA.md`](docs/ARCHITEKTURA.md). Hotový PR není draft — stačí **Squash and merge**, až jsou kontroly zelené.

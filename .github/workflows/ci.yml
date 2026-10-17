@@ -21,6 +21,7 @@ env:
     docs/CHANGELOG.md
     docs/ROADMAP.md
     docs/optimalizace.md
+    docs/ARCHITEKTURA.md
 
 jobs:
   links-offline:

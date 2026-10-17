@@ -17,6 +17,9 @@
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Person","name":"Martin Šimůnek","url":"https://klidne-podnikani.cz/","jobTitle":"Kouč pro klidné podnikání","email":"cesta-zmeny@email.cz","image":"https://klidne-podnikani.cz/images/martin_headshot.jpg"}
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,7 +27,7 @@
         <nav class="nav wrap">
             <a href="index.html" class="logo">Martin Šimůnek</a>
             <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
-            <label for="menu-checkbox" class="menu-icon" aria-label="Menu">☰</label>
+            <label for="menu-checkbox" class="menu-icon" aria-label="Menu" aria-expanded="false">☰</label>
             <ul>
                 <li><a href="index.html">Domů</a></li>
                 <li><a href="index.html#cenik">Ceník</a></li>
@@ -45,7 +48,7 @@
             </div>
             <div class="hero-portrait-wrap">
                 <div class="hero-portrait-crop">
-                    <img class="hero-portrait" src="images/martin_grey_shirt.jpg" alt="Martin Šimůnek" width="624" height="936">
+                    <img class="hero-portrait" src="images/martin_grey_shirt.jpg" alt="Martin Šimůnek" width="624" height="936" fetchpriority="high">
                 </div>
                 <span>Martin Šimůnek</span>
             </div>

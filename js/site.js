@@ -6,6 +6,51 @@
         if (path === '' && href === 'index.html') link.classList.add('is-active');
     });
 
+    var menu = document.getElementById('menu-checkbox');
+    var menuIcon = document.querySelector('.menu-icon');
+    if (menu && menuIcon) {
+        function syncMenu() {
+            menuIcon.setAttribute('aria-expanded', menu.checked ? 'true' : 'false');
+        }
+        menu.addEventListener('change', syncMenu);
+        document.querySelectorAll('.nav ul a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                menu.checked = false;
+                syncMenu();
+            });
+        });
+        syncMenu();
+    }
+
+    var form = document.getElementById('contact-form');
+    if (form) {
+        var status = form.querySelector('.form-status');
+        var button = form.querySelector('button[type="submit"]');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (!status) return;
+            status.hidden = false;
+            status.className = 'form-status';
+            status.textContent = 'Odesílám…';
+            if (button) button.disabled = true;
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { Accept: 'application/json' }
+            }).then(function (response) {
+                if (!response.ok) throw new Error('fail');
+                form.reset();
+                status.className = 'form-status is-ok';
+                status.textContent = 'Děkuji, zpráva je odeslaná. Ozvu se e-mailem.';
+            }).catch(function () {
+                status.className = 'form-status is-err';
+                status.textContent = 'Odeslání se nepovedlo. Napište mi prosím na cesta-zmeny@email.cz nebo zavolejte.';
+            }).then(function () {
+                if (button) button.disabled = false;
+            });
+        });
+    }
+
     var root = document.getElementById('quotes');
     if (!root) return;
     var slides = Array.prototype.slice.call(root.querySelectorAll('.slide'));
