@@ -28,7 +28,8 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 ## Fáze 1b — Klidné weby
 
 - [x] Podstránka služby (`weby.html`) s portfoliem realizací
-- [x] Ceník tvorby webů (sazby 900 / 650 Kč, balíček Klidný web 7 000 Kč)
+- [x] Ceník tvorby webů (balíček 7 000 Kč, nad rámec 650 Kč / hod)
+- [x] Operativa v podnikání 650 Kč / hod, přehled ceníku na úvodu ve dvou cestách
 
 ## Fáze 2 — Výkon (bez čísel Lighthouse)
 

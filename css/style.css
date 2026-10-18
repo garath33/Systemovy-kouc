@@ -696,6 +696,71 @@ a {
     max-width: 38rem;
 }
 
+.path-chooser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+    margin-bottom: 2.8rem;
+}
+
+.path-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.7rem 1.6rem 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.path-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--blue);
+}
+
+.path-card h3 {
+    margin-bottom: 0.2rem;
+}
+
+.path-card-web {
+    background: linear-gradient(180deg, var(--teal-soft) 0%, #fff 48%);
+    border-color: rgba(15, 118, 110, 0.28);
+}
+
+.path-card-web:hover {
+    border-color: var(--teal);
+}
+
+.path-line {
+    margin: 0.15rem 0 0;
+}
+
+.path-more {
+    margin-top: 0.9rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.path-card-web .path-more {
+    color: var(--teal);
+}
+
+.offer-lane {
+    padding-top: 0.4rem;
+}
+
+.lane-head {
+    max-width: 40rem;
+    margin-bottom: 1.3rem;
+}
+
+.lane-head h3 {
+    letter-spacing: -0.03em;
+    font-size: 1.45rem;
+    margin-bottom: 0.45rem;
+}
+
 .form select {
     width: 100%;
     border: 1px solid var(--line);
@@ -829,7 +894,8 @@ a {
     .about-layout,
     .compare,
     .portfolio,
-    .web-offer {
+    .web-offer,
+    .path-chooser {
         grid-template-columns: 1fr;
     }
 
