@@ -2,6 +2,12 @@
 
 Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
+## 2026-10-18 — Přehlednější ceník: dvě cesty
+
+- Úvodní stránka: nejdřív volba Podnikání / Web, teprve potom detaily.
+- Podnikání: koučink 900 Kč / hod, operativa 650 Kč / hod. Měsíční balíčky 7 500 Kč a 15 000 Kč.
+- Web: jen balíček Klidný web 7 000 Kč a jediná sazba 650 Kč / hod za práci nad rámec.
+
 ## 2026-10-17 — Sloučení s CI/SEO z main
 
 - Konflikt s `main` (PR #4) vyřešen: changelog a roadmapa drží obě sady změn.
