@@ -2,6 +2,12 @@
 
 Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
+## 2026-10-20 — Úvod se dvěma stejně silnými službami
+
+- Hlavní stránka už nezačíná jen koučinkem. Hned pod úvodem jsou dvě stejně velké karty: podpora a koučink, tvorba webů.
+- Člověk, který hledá web, odchází na `weby.html` z první obrazovky. Detail podnikání zůstává na úvodu ve stejně dlouhém bloku vedle postupu tvorby webu.
+- Ceník má obě služby ve dvou sloupcích. Navigace má položku Podnikání vedle Webů.
+
 ## 2026-10-18 — Přehlednější ceník: dvě cesty
 
 - Úvodní stránka: nejdřív volba Podnikání / Web, teprve potom detaily.

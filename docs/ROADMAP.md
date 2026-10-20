@@ -30,6 +30,7 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 - [x] Podstránka služby (`weby.html`) s portfoliem realizací
 - [x] Ceník tvorby webů (balíček 7 000 Kč, nad rámec 650 Kč / hod)
 - [x] Operativa v podnikání 650 Kč / hod, přehled ceníku na úvodu ve dvou cestách
+- [x] Úvod: obě služby ve stejné váze hned na první obrazovce (podnikání i weby)
 
 ## Fáze 2 — Výkon (bez čísel Lighthouse)
 
