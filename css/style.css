@@ -199,7 +199,7 @@ a {
     max-width: 14em;
 }
 
-.hero-choices {
+.actions.hero-choices {
     display: none;
     margin-top: 1.35rem;
 }
@@ -743,6 +743,27 @@ a {
     line-height: 1.15;
 }
 
+.rate-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem 1.2rem;
+    margin-top: 1.15rem;
+}
+
+.rate-label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin: 0 0 0.2rem;
+}
+
+.rate-pair .door-price {
+    margin-top: 0;
+    font-size: clamp(1.45rem, 2vw, 1.7rem);
+}
+
 .door-price span {
     font-size: 0.95rem;
     font-weight: 600;
@@ -1106,7 +1127,7 @@ a {
         order: -1;
     }
 
-    .hero-choices {
+    .actions.hero-choices {
         display: flex;
     }
 
