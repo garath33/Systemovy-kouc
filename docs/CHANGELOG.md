@@ -2,6 +2,19 @@
 
 Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
+## 2026-10-20 — Sazby a úvod bez čísel služeb
+
+- Z karet na úvodu je pryč označení Služba 01 a Služba 02.
+- Podpora podnikatelů se na úvodu ukazuje hodinově: koučink 900 Kč, operativa 550 Kč.
+- Měsíční balíčky sedí s novou operativou: 6 900 Kč (10 h) a 13 800 Kč (20 h).
+- Tvorba webu: balíček od 6 800 Kč, hodinovka 700 Kč, platbu lze rozložit až do 3 splátek.
+
+## 2026-10-20 — Úvod se dvěma stejně silnými službami
+
+- Hlavní stránka už nezačíná jen koučinkem. Hned pod úvodem jsou dvě stejně velké karty: podpora a koučink, tvorba webů.
+- Člověk, který hledá web, odchází na `weby.html` z první obrazovky. Detail podnikání zůstává na úvodu ve stejně dlouhém bloku vedle postupu tvorby webu.
+- Ceník má obě služby ve dvou sloupcích. Navigace má položku Podnikání vedle Webů.
+
 ## 2026-10-18 — Přehlednější ceník: dvě cesty
 
 - Úvodní stránka: nejdřív volba Podnikání / Web, teprve potom detaily.

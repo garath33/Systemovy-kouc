@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Šimůnek | Podpora a kouč pro klidné podnikání</title>
-    <meta name="description" content="Pomáhám podnikatelům vyznat se v chaosu. Pojmenujeme, co nefunguje, nastavíme věci tak, aby vám v nich bylo dobře, a nebudete na to sami.">
-    <meta name="keywords" content="Martin Šimůnek, kouč pro podnikatele, klidné podnikání, podpora, pravá ruka, procesy">
+    <title>Martin Šimůnek | Podpora podnikatelů a tvorba webů</title>
+    <meta name="description" content="Dvě služby hned na úvodu: koučink 900 Kč/h a operativa 550 Kč/h, nebo tvorba webu od 6 800 Kč. Platbu webu lze rozložit až do 3 splátek.">
+    <meta name="keywords" content="Martin Šimůnek, kouč pro podnikatele, klidné podnikání, tvorba webu, statický web">
     <link rel="canonical" href="https://klidne-podnikani.cz/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="cs_CZ">
     <meta property="og:site_name" content="Martin Šimůnek">
     <meta property="og:url" content="https://klidne-podnikani.cz/">
-    <meta property="og:title" content="Martin Šimůnek – podpora a kouč pro klidné podnikání">
-    <meta property="og:description" content="Pomáhám podnikatelům vyznat se v chaosu. Jsem vaše pravá ruka na cestě ke klidnému podnikání.">
+    <meta property="og:title" content="Martin Šimůnek – podpora podnikatelů a tvorba webů">
+    <meta property="og:description" content="Podpora, koučink a operativa pro podnikatele. A samostatně rychlé weby bez redakčního systému. Obě služby jsou hned na úvodu.">
     <meta property="og:image" content="https://klidne-podnikani.cz/images/martin_headshot.jpg">
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Person","name":"Martin Šimůnek","url":"https://klidne-podnikani.cz/","jobTitle":"Kouč pro klidné podnikání","email":"cesta-zmeny@email.cz","image":"https://klidne-podnikani.cz/images/martin_headshot.jpg"}
+    {"@context":"https://schema.org","@type":"ProfessionalService","name":"Martin Šimůnek","url":"https://klidne-podnikani.cz/","email":"cesta-zmeny@email.cz","image":"https://klidne-podnikani.cz/images/martin_headshot.jpg","areaServed":"CZ","founder":{"@type":"Person","name":"Martin Šimůnek"},"makesOffer":[{"@type":"Offer","name":"Podpora a koučink pro klidné podnikání","url":"https://klidne-podnikani.cz/#podnikani"},{"@type":"Offer","name":"Tvorba klidných webů","url":"https://klidne-podnikani.cz/weby.html"}]}
     </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -27,8 +27,9 @@
             <label for="menu-checkbox" class="menu-icon" aria-label="Menu">☰</label>
             <ul>
                 <li><a href="index.html">Domů</a></li>
-                <li><a href="index.html#cenik">Ceník</a></li>
+                <li><a href="index.html#podnikani">Podnikání</a></li>
                 <li><a href="weby.html">Weby</a></li>
+                <li><a href="index.html#cenik">Ceník</a></li>
                 <li><a href="reference.html">Reference</a></li>
                 <li><a href="o-mne.html">O Martinovi</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -36,13 +37,16 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero hero-home">
         <div class="wrap hero-inner">
             <div class="hero-copy">
-                <p class="eyebrow">Podpora a kouč pro klidné podnikání</p>
-                <h1>Pomáhám podnikatelům vyznat se v chaosu</h1>
-                <p class="lead">Společně pojmenujeme věci, které nefungují. Pomohu vám se na chvíli zastavit, nadechnout se a zamyslet se nad tím, jak chcete mít věci nastavené, aby vám v nich bylo dobře.</p>
-                <p class="lead">Dám vaší práci strukturu a převezmu část operativy. Když budete chtít, pomůžu i najít někoho, kdo vám s ní pomůže. Jsem vaše pravá ruka a pomoc na cestě ke klidnému podnikání, abyste už na nic nemuseli být sami.</p>
+                <p class="eyebrow">Dvě samostatné služby</p>
+                <h1>Podpora podnikatelů a tvorba webů</h1>
+                <p class="lead">Obě jsou hned tady, vedle sebe. Jedna je koučink, systém a pravá ruka v provozu. Druhá je rychlý web s pevnou cenou. Pokračujte jen tím, co hledáte.</p>
+                <div class="actions hero-choices">
+                    <a class="btn btn-primary" href="#podnikani">Podpora a koučink</a>
+                    <a class="btn btn-web" href="weby.html">Tvorba webů</a>
+                </div>
             </div>
             <div class="hero-portrait-wrap">
                 <div class="hero-portrait-crop">
@@ -54,194 +58,201 @@
     </section>
 
     <div class="wrap">
-        <div class="stat-row">
-            <div class="stat">
-                <strong>Pojmenovat, co nefunguje</strong>
-                <span>Vidět chaos, ne se v něm ztrácet</span>
-            </div>
-            <div class="stat">
-                <strong>Zastavit se a nadechnout</strong>
-                <span>Nastavit věci tak, aby vám v nich bylo dobře</span>
-            </div>
-            <div class="stat">
-                <strong>Nemusíte na to být sami</strong>
-                <span>Pravá ruka na cestě ke klidu</span>
-            </div>
+        <div class="service-doors" id="sluzby">
+            <article class="card service-door service-door-coach">
+                <h2>Podpora a koučink</h2>
+                <p>Pro podnikatele, kteří jsou na provoz sami. Pojmenujeme, co nefunguje, nastavíme řád a převezmu část operativy.</p>
+                <ul>
+                    <li>Plná hlava nápadů, ale chybí systém</li>
+                    <li>Podnikání za pochodu a hasení provozu</li>
+                    <li>Administrativa, která bere čas na rozvoj</li>
+                    <li>Parťák do práce, ne další poučky</li>
+                </ul>
+                <div class="rate-pair">
+                    <div>
+                        <p class="rate-label">Koučink</p>
+                        <p class="door-price">900 Kč <span>/ hodina</span></p>
+                    </div>
+                    <div>
+                        <p class="rate-label">Operativa</p>
+                        <p class="door-price">550 Kč <span>/ hodina</span></p>
+                    </div>
+                </div>
+                <div class="door-actions">
+                    <a class="btn btn-solid" href="#podnikani">Jak spolupráce probíhá</a>
+                    <a class="door-more" href="#cenik-podnikani">Ceník podnikání</a>
+                </div>
+            </article>
+            <article class="card service-door service-door-web">
+                <h2>Tvorba webů</h2>
+                <p>Pro toho, kdo hledá web a nic dalšího. Statická stránka bez redakčního systému. Nejdřív nabídka, potom web, který se po spuštění stará sám.</p>
+                <ul>
+                    <li>Klidný web od 6&nbsp;800&nbsp;Kč</li>
+                    <li>Rychlé načtení, mobil, formulář, základní SEO</li>
+                    <li>Pomoc s doménou a hostingem v ceně</li>
+                    <li>Cokoli navíc 700 Kč / hodina</li>
+                </ul>
+                <p class="door-price">od 6&nbsp;800&nbsp;Kč <span>hotový web</span></p>
+                <p class="door-rate">Hodinovka 700 Kč. Platbu lze rozložit až do 3 splátek.</p>
+                <div class="door-actions">
+                    <a class="btn btn-teal" href="weby.html">Přejít na weby</a>
+                    <a class="door-more" href="weby.html#cenik-webu">Ceník a ukázky</a>
+                </div>
+            </article>
         </div>
     </div>
 
     <main>
-        <section class="section">
+        <section class="section split-section">
             <div class="wrap">
                 <div class="section-head">
-                    <h2>Cítíte, že jste na všechno sami?</h2>
-                    <p>Jsem tu pro vás. Neváhejte se na mě obrátit. Společně přijdeme na to, jak vám uvolnit ruce a vytvořit čas i na rozvoj, nejen na denní operativu.</p>
+                    <h2>Stejný postup. Jiný výsledek.</h2>
+                    <p>Nejdřív pojmenujeme, co má fungovat. Pak to nastavíme. U podnikání je výsledek klid v provozu. U webu je výsledek stránka, která vás dál nezatěžuje.</p>
                 </div>
-                <div class="grid-2">
-                    <article class="card situation">
-                        <div class="num">01</div>
-                        <h3>Plná hlava nápadů, ale chybí systém</h3>
-                        <p class="muted">Máte vizi, chybí ale struktura a návyky, které ji spolehlivě dovádějí do konce.</p>
-                    </article>
-                    <article class="card situation">
-                        <div class="num">02</div>
-                        <h3>Podnikání za pochodu</h3>
-                        <p class="muted">Hasíte provoz, stavíte za běhu a pořád chybí jasný řád práce.</p>
-                    </article>
-                    <article class="card situation">
-                        <div class="num">03</div>
-                        <h3>Utopení v administrativě</h3>
-                        <p class="muted">Místo strategie trávíte hodiny tabulkami, e-maily a rutinou.</p>
-                    </article>
-                    <article class="card situation">
-                        <div class="num">04</div>
-                        <h3>Potřebujete parťáka, ne poučky</h3>
-                        <p class="muted">Nechcete další teorii. Chcete někoho, kdo práci pomůže odbavit a nastavit pravidla.</p>
-                    </article>
-                </div>
-                <div class="mid-cta">
-                    <h2>Poznáváte se v tom?</h2>
-                    <p>Rád vám pomohu se zorientovat a dostat do klidu.</p>
-                    <a class="btn btn-solid" href="kontakt.html">Domluvme si 30min hovor zdarma</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" style="padding-top: 0;">
-            <div class="wrap">
-                <div class="section-head">
-                    <h2>Čtyři pilíře spolupráce</h2>
-                    <p>Od diagnózy chaosu po digitální kancelář a první delegování.</p>
-                </div>
-                <div class="grid-2">
-                    <article class="card pillar">
-                        <p class="kicker">Pilíř 1</p>
-                        <h3>Rozklíčování chaosu</h3>
-                        <p class="muted">Zmapujeme stav, úzká hrdla a to, co vás brzdí.</p>
-                        <ul>
-                            <li>Silné a slabé stránky: co nechat sobě a co pustit</li>
-                            <li>Pojmenování největších bolestí provozu</li>
-                            <li>Okamžité kroky ke zklidnění a prioritám</li>
-                        </ul>
-                    </article>
-                    <article class="card pillar">
-                        <p class="kicker">Pilíř 2</p>
-                        <h3>Architektura procesů</h3>
-                        <p class="muted">Struktura a pravidla i tam, kde dřív vládl chaos.</p>
-                        <ul>
-                            <li>Přehledný tok práce</li>
-                            <li>Pravidla komunikace a předávání informací</li>
-                            <li>Koučink změn a udržitelných návyků</li>
-                        </ul>
-                    </article>
-                    <article class="card pillar">
-                        <p class="kicker">Pilíř 3</p>
-                        <h3>Digitální kancelář</h3>
-                        <p class="muted">Google Workspace vyladěný do funkčního celku.</p>
-                        <ul>
-                            <li>Struktura Disku, složek a sdílení</li>
-                            <li>Úkoly a projekty v Tabulkách, Keep a Tasks</li>
-                            <li>E-mail a kalendář, které vrací čas</li>
-                        </ul>
-                    </article>
-                    <article class="card pillar">
-                        <p class="kicker">Pilíř 4</p>
-                        <h3>Operativní partnerství</h3>
-                        <p class="muted">Fyzická exekuce, trénink delegování a check-iny.</p>
-                        <ul>
-                            <li>Přebírání administrativy jako pravá ruka</li>
-                            <li>Pomoc s hledáním člověka, který vám s operativou pomůže</li>
-                            <li>Postupné předávání odpovědnosti</li>
-                            <li>Pravidelné check-iny pro směr a disciplínu</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" style="padding-top: 0;">
-            <div class="wrap">
-                <article class="card web-offer">
-                    <div>
-                        <p class="kicker">Nová služba</p>
-                        <h2>Tvořím také klidné a rychlé weby</h2>
-                        <p>Statické stránky bez redakčního systému. Balíček Klidný web má pevnou cenu 7&nbsp;000&nbsp;Kč — strategie, kódování, formulář a pomoc s doménou i hostingem.</p>
-                    </div>
-                    <a class="btn btn-solid" href="weby.html#cenik-webu">Ceník webů</a>
-                </article>
-            </div>
-        </section>
-
-        <section class="section" id="cenik" style="padding-top: 0;">
-            <div class="wrap">
-                <div class="section-head">
-                    <h2>Dvě cesty. Jedna logika.</h2>
-                    <p>Nejdřív si vyberte, s čím přicházíte. Podnikání má koučink a operativu. Web má jednu pevnou cenu — a jen jednu sazbu, když je potřeba víc.</p>
-                </div>
-                <div class="path-chooser">
-                    <a class="card path-card" href="#cenik-podnikani">
-                        <p class="kicker">Cesta 1</p>
-                        <h3>Klidné podnikání</h3>
-                        <p class="muted">Systém, koučink a pravá ruka v provozu.</p>
-                        <p class="path-line"><strong>900 Kč</strong> koučink · <strong>650 Kč</strong> operativa</p>
-                        <p class="path-line muted">Měsíční balíčky od 7 500 Kč</p>
-                        <span class="path-more">Podívat se na ceník podnikání</span>
-                    </a>
-                    <a class="card path-card path-card-web" href="weby.html#cenik-webu">
-                        <p class="kicker">Cesta 2</p>
-                        <h3>Klidný web</h3>
-                        <p class="muted">Rychlá statická stránka bez údržby a bez redakčního systému.</p>
-                        <p class="path-line"><strong>7 000 Kč</strong> hotový web</p>
-                        <p class="path-line muted">Cokoli navíc 650 Kč / hodina</p>
-                        <span class="path-more">Podívat se na weby a ceník</span>
-                    </a>
-                </div>
-
-                <div class="offer-lane" id="cenik-podnikani">
-                    <div class="lane-head">
+                <div class="split-services">
+                    <article class="card split-panel" id="podnikani">
                         <p class="kicker">Podnikání</p>
-                        <h3>Koučink 900 Kč, operativa 650 Kč</h3>
-                        <p class="muted">Společný čas je dražší, protože v něm rozhodujeme. Samostatná práce na pozadí je levnější, abyste nemuseli sedět u každé tabulky.</p>
+                        <h2>Čtyři pilíře spolupráce</h2>
+                        <p class="muted">Jsem vaše pravá ruka na cestě ke klidnému podnikání. Když budete chtít, pomůžu i najít člověka, který operativu převezme po mně.</p>
+                        <ol class="step-list">
+                            <li>
+                                <strong>Rozklíčování chaosu</strong>
+                                <span>Zmapujeme stav, úzká hrdla a to, co vás brzdí. Hned z toho jsou priority.</span>
+                            </li>
+                            <li>
+                                <strong>Architektura procesů</strong>
+                                <span>Tok práce, pravidla předávání a koučink návyků, které změnu udrží.</span>
+                            </li>
+                            <li>
+                                <strong>Digitální kancelář</strong>
+                                <span>Google Workspace: Disk, úkoly, e-mail a kalendář jako jeden celek.</span>
+                            </li>
+                            <li>
+                                <strong>Operativní partnerství</strong>
+                                <span>Přebírám administrativu, trénujeme delegování a držíme směr na check-inech.</span>
+                            </li>
+                        </ol>
+                        <div class="door-actions">
+                            <a class="btn btn-solid" href="kontakt.html?tema=podnikani">30min hovor o podnikání</a>
+                            <a class="door-more" href="#cenik-podnikani">Podívat se na ceník</a>
+                        </div>
+                    </article>
+                    <article class="card split-panel split-panel-web" id="tvorba-webu">
+                        <p class="kicker">Weby</p>
+                        <h2>Čtyři kroky ke klidnému webu</h2>
+                        <p class="muted">Web slouží podnikání, ne naopak. Žádný redakční systém, žádné aktualizace, žádná administrace, kterou byste se učili.</p>
+                        <ol class="step-list">
+                            <li>
+                                <strong>Úvod</strong>
+                                <span>Hodina společné práce. Pojmenujeme nabídku, strukturu a to, co má návštěvník pochopit.</span>
+                            </li>
+                            <li>
+                                <strong>Návrh a revize</strong>
+                                <span>Dvě půlhodiny. Doladíme kostru, text a pořadí dřív, než se začne kódovat.</span>
+                            </li>
+                            <li>
+                                <strong>Kódování</strong>
+                                <span>Statický web, mobil, základní SEO a formulář. Pracuji sám, vy podnikáte.</span>
+                            </li>
+                            <li>
+                                <strong>Předání</strong>
+                                <span>Půlhodina na spuštění. Doména, hosting a jak web žije dál bez údržby.</span>
+                            </li>
+                        </ol>
+                        <div class="door-actions">
+                            <a class="btn btn-teal" href="weby.html">Ukázky a celá nabídka</a>
+                            <a class="door-more" href="kontakt.html?tema=web">30min hovor o webu</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cenik">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Ceník obou služeb</h2>
+                    <p>Ceny stojí vedle sebe. Podnikání se účtuje hodinově: koučink 900 Kč, operativa 550 Kč. Web začíná na 6&nbsp;800&nbsp;Kč a další práce je 700 Kč za hodinu. Platbu webu lze rozložit až do 3 splátek.</p>
+                </div>
+                <div class="price-split">
+                    <div class="offer-lane" id="cenik-podnikani">
+                        <div class="lane-head">
+                            <p class="kicker">Podnikání</p>
+                            <h3>Koučink 900 Kč, operativa 550 Kč</h3>
+                            <p class="muted">Společný čas je dražší, protože v něm rozhodujeme. Samostatná práce na pozadí je levnější, abyste nemuseli sedět u každé tabulky.</p>
+                        </div>
+                        <div class="price-stack">
+                            <article class="card price-card">
+                                <h3>Společný čas a koučování</h3>
+                                <div class="price">900 Kč <span>/ hodina</span></div>
+                                <p class="muted">Online i osobní schůzky, diagnostika, mapování procesů, práce nad dokumenty, priority a návyky.</p>
+                            </article>
+                            <article class="card price-card">
+                                <h3>Samostatná operativa</h3>
+                                <div class="price price-teal">550 Kč <span>/ hodina</span></div>
+                                <p class="muted">Google Disk, šablony, e-mail, kalendář a odbavování administrativy bez vaší účasti.</p>
+                            </article>
+                            <article class="card price-card">
+                                <h3>První krok ke klidu</h3>
+                                <div class="price">6 900 Kč <span>/ měsíc</span></div>
+                                <ul>
+                                    <li>10 hodin měsíčně</li>
+                                    <li>4 h společný čas (4 × 900 Kč)</li>
+                                    <li>6 h samostatná operativa (6 × 550 Kč)</li>
+                                    <li>Základ Google Workspace a uvolnění rutiny</li>
+                                </ul>
+                                <a class="btn btn-solid btn-full" href="kontakt.html?tema=podnikani">Domluvme si hovor</a>
+                            </article>
+                            <article class="card price-card featured">
+                                <span class="badge">Doporučujeme</span>
+                                <h3>Pravá ruka a systém</h3>
+                                <div class="price">13 800 Kč <span>/ měsíc</span></div>
+                                <ul>
+                                    <li>20 hodin měsíčně</li>
+                                    <li>8 h společný čas (8 × 900 Kč)</li>
+                                    <li>12 h samostatná operativa (12 × 550 Kč)</li>
+                                    <li>Kompletní digitální kancelář, check-iny a delegování</li>
+                                </ul>
+                                <a class="btn btn-solid btn-full" href="kontakt.html?tema=podnikani">Domluvme si hovor</a>
+                            </article>
+                        </div>
                     </div>
-                    <div class="grid-2" style="margin-bottom: 1.2rem;">
-                        <article class="card price-card">
-                            <h3>Společný čas a koučování</h3>
-                            <div class="price">900 Kč <span>/ hodina</span></div>
-                            <p class="muted">Online i osobní schůzky, diagnostika, mapování procesů, práce nad dokumenty, priority a návyky.</p>
-                        </article>
-                        <article class="card price-card">
-                            <h3>Samostatná operativa</h3>
-                            <div class="price" style="color: var(--teal);">650 Kč <span>/ hodina</span></div>
-                            <p class="muted">Google Disk, šablony, e-mail, kalendář a odbavování administrativy bez vaší účasti.</p>
-                        </article>
-                    </div>
-                    <div class="grid-2">
-                        <article class="card price-card">
-                            <h3>První krok ke klidu</h3>
-                            <div class="price">7 500 Kč <span>/ měsíc</span></div>
-                            <ul>
-                                <li>10 hodin měsíčně</li>
-                                <li>4 h společný čas (4 × 900 Kč)</li>
-                                <li>6 h samostatná operativa (6 × 650 Kč)</li>
-                                <li>Základ Google Workspace a uvolnění rutiny</li>
-                            </ul>
-                            <a class="btn btn-solid btn-full" href="kontakt.html" style="margin-top: auto;">Domluvme si hovor</a>
-                        </article>
-                        <article class="card price-card featured">
-                            <span class="badge">Doporučujeme</span>
-                            <h3>Pravá ruka a systém</h3>
-                            <div class="price">15 000 Kč <span>/ měsíc</span></div>
-                            <ul>
-                                <li>20 hodin měsíčně</li>
-                                <li>8 h společný čas (8 × 900 Kč)</li>
-                                <li>12 h samostatná operativa (12 × 650 Kč)</li>
-                                <li>Kompletní digitální kancelář, check-iny a delegování</li>
-                            </ul>
-                            <a class="btn btn-solid btn-full" href="kontakt.html" style="margin-top: auto;">Domluvme si hovor</a>
-                        </article>
+                    <div class="offer-lane" id="cenik-webu-nahled">
+                        <div class="lane-head">
+                            <p class="kicker">Weby</p>
+                            <h3>Balíček od 6 800 Kč</h3>
+                            <p class="muted">Většina zadání se vejde do balíčku Klidný web. Když je potřeba víc, počítá se 700 Kč za hodinu. Platbu balíčku lze rozložit až do 3 splátek.</p>
+                        </div>
+                        <div class="price-stack">
+                            <article class="card price-card featured">
+                                <span class="badge">Základ</span>
+                                <h3>Klidný web</h3>
+                                <div class="price">od 6 800 Kč</div>
+                                <p class="muted">Statický, rychlý a bezúdržbový web na jedné doméně. V ceně je ujasnění nabídky, stavba i předání. Platbu lze rozložit až do 3 splátek.</p>
+                                <ul>
+                                    <li>1 jazyk, 1 doména, mobilní zobrazení</li>
+                                    <li>Základní SEO a kontaktní formulář</li>
+                                    <li>Úvod, dvě revize a předání v rámci balíčku</li>
+                                    <li>Zdarma: pomoc s výběrem a nákupem domény i hostingu</li>
+                                    <li>Platba až ve 3 splátkách</li>
+                                </ul>
+                                <a class="btn btn-teal btn-full" href="kontakt.html?tema=web">Chci Klidný web</a>
+                            </article>
+                            <article class="card price-card extra-card">
+                                <p class="kicker">Nad rámec balíčku</p>
+                                <h3>Práce navíc</h3>
+                                <div class="price price-teal">700 Kč <span>/ hodina</span></div>
+                                <p class="muted">Jediná sazba u webu. Platí pro extra práci, úpravy i pokročilé funkce. Hovory nad rámec procesu delší než 10 minut se účtují poměrově stejnou sazbou.</p>
+                                <ul>
+                                    <li>Další stránky, úpravy a správa po spuštění</li>
+                                    <li>Progresivní webové aplikace, geolokace, vícejazyčnost</li>
+                                    <li>Více domén a lokalizace</li>
+                                </ul>
+                                <a class="btn btn-teal btn-full" href="weby.html#cenik-webu">Celý ceník a ukázky</a>
+                            </article>
+                        </div>
                     </div>
                 </div>
-                <p class="muted" style="margin-top: 1.2rem; text-align: center;">Tvorba webu má vlastní ceník: strategie 900&nbsp;Kč / hod, kódování 650&nbsp;Kč / hod, balíček Klidný web 7&nbsp;000&nbsp;Kč. <a href="weby.html#cenik-webu">Zobrazit ceník webů</a></p>
             </div>
         </section>
 
@@ -249,7 +260,7 @@
             <div class="wrap">
                 <div class="section-head">
                     <h2>Co říkají klienti</h2>
-                    <p>Ohlasy na koučink a spolupráci.</p>
+                    <p>Ohlasy na koučink a spolupráci. Hotové weby jsou na stránce <a href="weby.html#portfolio">tvorby webů</a>.</p>
                 </div>
                 <div class="card quote-card slideshow" id="quotes">
                     <div class="slide active">
@@ -285,10 +296,13 @@
             <div class="wrap">
                 <div class="cta-band">
                     <div>
-                        <h2>Začněme 30 minutami zdarma</h2>
-                        <p>Zavolejte mi nebo napište. Bez kalendáře, stačí se ozvat.</p>
+                        <h2>30 minut zdarma, ať řešíte cokoli z toho</h2>
+                        <p>Napište, jestli jde o podnikání, o web, nebo o obojí. Bez kalendáře, stačí se ozvat.</p>
                     </div>
-                    <a class="btn btn-primary" href="kontakt.html">Domluvme si 30min hovor zdarma</a>
+                    <div class="actions">
+                        <a class="btn btn-primary" href="kontakt.html?tema=podnikani">Hovor o podnikání</a>
+                        <a class="btn btn-ghost" href="kontakt.html?tema=web">Hovor o webu</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -298,7 +312,7 @@
         <div class="wrap footer-inner">
             <div>
                 <a class="footer-brand" href="index.html">Martin Šimůnek</a>
-                <p>Podpora a kouč pro klidné podnikání</p>
+                <p>Podpora podnikatelů a tvorba webů</p>
             </div>
             <p>© 2026 Martin Šimůnek · <a href="ochrana-udaju.html">Ochrana údajů</a> · <a href="storno.html">Storno podmínky</a></p>
         </div>
