@@ -2,6 +2,10 @@
 
 Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
+## 2026-10-21 — Portfolio: Terapie vědomého dotyku
+
+- Ukázka vede na `https://terapiedoteku.cz/` a náhled ukazuje aktuální layout úvodní strany.
+
 ## 2026-10-20 — Sazby a úvod bez čísel služeb
 
 - Z karet na úvodu je pryč označení Služba 01 a Služba 02.

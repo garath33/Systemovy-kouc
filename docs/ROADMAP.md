@@ -32,6 +32,7 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 - [x] Operativa v podnikání 650 Kč / hod, přehled ceníku na úvodu ve dvou cestách
 - [x] Úvod: obě služby ve stejné váze hned na první obrazovce (podnikání i weby)
 - [x] Sazby: operativa 550 Kč/h, web od 6 800 Kč a 700 Kč/h, až 3 splátky
+- [x] Portfolio: Terapie vědomého dotyku na `terapiedoteku.cz` s aktuálním náhledem
 
 ## Fáze 2 — Výkon (bez čísel Lighthouse)
 
