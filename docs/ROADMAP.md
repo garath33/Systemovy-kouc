@@ -24,6 +24,7 @@ Práce: schválená fáze → feature větev → PR → CI → tvoje schválení
 - [x] JSON-LD (Person) na homepage
 - [ ] Po merge: v Google Search Console přidat `https://klidne-podnikani.cz/` a odeslat sitemap
 - [x] Přesměrování `klidnepodnikani.online` → `klidne-podnikani.cz`
+- [x] Interní odkazy na úvod sedí s kanonickou adresou `/` (ne `index.html`)
 
 ## Fáze 1b — Klidné weby
 
