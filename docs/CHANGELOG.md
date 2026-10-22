@@ -6,6 +6,7 @@ Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
 - Odkazy na domů vedou na `https://klidne-podnikani.cz/`, stejně jako kanonická adresa a sitemap. Dřív menu ukazovalo na `index.html`, kterou GitHub Pages vrací jako druhou kopii stejné stránky.
 - Zvýraznění aktivní položky v menu bere `/`, `/index.html` i adresu bez `.html` jako tutéž stránku.
+- Kontrola odkazů bere `/` a `/#kotva` jako `index.html`, protože tam ty kotvy jsou.
 
 ## 2026-10-21 — Portfolio: Terapie vědomého dotyku
 

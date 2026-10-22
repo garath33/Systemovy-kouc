@@ -2,6 +2,9 @@
 verbose = "info"
 no_progress = true
 include_fragments = "full"
+
+# Odkaz `/` a `/#kotva` míří na adresář. Fragmenty jsou v index.html.
+index_files = ["index.html"]
 accept = ["200..=299", "403", "429"]
 
 # mailto/tel se neověřují; Formspree je POST endpoint (GET vrací 405).
