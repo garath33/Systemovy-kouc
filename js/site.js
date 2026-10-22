@@ -1,11 +1,16 @@
 (function () {
-    var path = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    function pageKey(value) {
+        var file = (value || '').split('#')[0].split('?')[0].toLowerCase();
+        var name = file.split('/').filter(Boolean).pop() || 'index';
+        if (name === 'index.html') return 'index';
+        return name.replace(/\.html$/, '');
+    }
+
+    var pathKey = pageKey(window.location.pathname);
     document.querySelectorAll('.nav ul a').forEach(function (link) {
         var raw = link.getAttribute('href') || '';
-        var href = raw.split('#')[0].toLowerCase();
-        var hasHash = raw.indexOf('#') >= 0;
-        if (!hasHash && href && href === path) link.classList.add('is-active');
-        if (!hasHash && path === '' && href === 'index.html') link.classList.add('is-active');
+        if (raw.indexOf('#') >= 0) return;
+        if (pageKey(raw) === pathKey) link.classList.add('is-active');
     });
 
     var tema = new URLSearchParams(window.location.search).get('tema');

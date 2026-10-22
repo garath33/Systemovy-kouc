@@ -2,6 +2,12 @@
 
 Zaznamenává změny webu klidne-podnikani.cz. Novější záznamy jsou nahoře.
 
+## 2026-10-22 — Jedna adresa pro úvodní stránku
+
+- Odkazy na domů vedou na `https://klidne-podnikani.cz/`, stejně jako kanonická adresa a sitemap. Dřív menu ukazovalo na `index.html`, kterou GitHub Pages vrací jako druhou kopii stejné stránky.
+- Zvýraznění aktivní položky v menu bere `/`, `/index.html` i adresu bez `.html` jako tutéž stránku.
+- Kontrola odkazů bere `/` a `/#kotva` jako `index.html`, protože tam ty kotvy jsou.
+
 ## 2026-10-21 — Portfolio: Terapie vědomého dotyku
 
 - Ukázka vede na `https://terapiedoteku.cz/` a náhled ukazuje aktuální layout úvodní strany.

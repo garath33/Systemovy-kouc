@@ -24,3 +24,11 @@
 1. Google Search Console → přidat službu `https://klidne-podnikani.cz/` (ověření přes DNS u Hukotu nebo HTML soubor, až řekneš).
 2. Odeslat `https://klidne-podnikani.cz/sitemap.xml`.
 3. Přesměrování `.online` je hotové.
+
+## Indexace (2026-10-22)
+
+Search Console hlásí dvě vyloučené skupiny. Obě mají zůstat mimo index; do indexu patří kanonické adresy ze sitemapy.
+
+**Stránka s přesměrováním.** `http://` a `www` vrací 301 na `https://klidne-podnikani.cz/`. Složky bez lomítka (`/css`, `/images`) taky. To je správně a indexovat se nemá.
+
+**Duplicitní stránka, Google zvolil jinou kanonickou stránku.** GitHub Pages vrací stejné HTML na `/` i na `/index.html` (a na `/weby` i na `/weby.html`). Kanonická značka úvodu říká `/`, menu ale odkazovalo na `index.html`, takže Google mohl za hlavní vybrat druhou adresu a tu první neindexovat. Odkazy teď míří na `/`. U podstránek kanonická adresa, menu i sitemap zůstávají na `*.html`. Druhá kopie se indexovat nemá.
